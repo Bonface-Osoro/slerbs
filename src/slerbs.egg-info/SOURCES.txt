@@ -1,0 +1,12 @@
+.DS_Store
+LICENSE
+README.md
+setup.py
+docs/broslire.png
+docs/broslire.pptx
+src/slerbs.egg-info/PKG-INFO
+src/slerbs.egg-info/SOURCES.txt
+src/slerbs.egg-info/dependency_links.txt
+src/slerbs.egg-info/not-zip-safe
+src/slerbs.egg-info/requires.txt
+src/slerbs.egg-info/top_level.txt

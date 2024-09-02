@@ -1,0 +1,48 @@
+Metadata-Version: 2.1
+Name: slerbs
+Version: 0.1.dev3+g77a8f82.d20240902
+Summary: Systematic Literature Review for Broadband Sustainability
+Home-page: https://github.com/Bonface-Osoro/saleos
+Author: Bonface Osoro/Ed Oughton
+Author-email: bosoro@gmu.edu
+License: MIT License
+Keywords: broadband,sustainability,SDGs
+Classifier: Development Status :: 1 - Planning
+Classifier: Intended Audience :: Developers
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Programming Language :: Python
+Classifier: Programming Language :: Python :: 3
+Classifier: Topic :: Scientific/Engineering :: Telecommunication
+Classifier: Topic :: Utilities
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Systematic Literature Review for Broadband Sustainability (slerbs)
+This is a repository for quantifying the amount of scientific articles focusing 
+on the role of broadband in supporting Sustainable Development Goals (SDGs). 
+
+Few studies have fully investigated the link between universal broadband access, 
+SDGs and environmental sustainability. Understandably, most broadband research 
+focuses on the cost and technical solutions for providing last mile connectivity. 
+However, there is need to underscore the importance of broadband in realizing SDGs. 
+Documenting and highlighting the role of broadband in realization of the SDGs 
+increases the likelihood of policy makers and analysts in prioritizing and 
+deploying broadband. Therefore, the goal of this paper is to provide a survey 
+and review the research that demonstrate the importance of broadband in 
+supporting SDGs and environmental sustainability. Specifically, the research 
+questions are:
+
+1.	What are the major SDGs linked to broadband connectivity?
+2.	Which development areas have benefited from broadband connectivity?
+3.	What are the dominant techniques and scopes of broadband connectivity, SDG 
+    and environmental sustainability studies?
+
+ `Figure 1` shows the outline of the Preferred Reporting Items for Systematic 
+ Reviews and Meta-Analyses (PRISMA) followed in the literature.  
+
+#### Figure 1 .
+<p align="center">
+  <img src="/docs/broslire.png" />
+</p>
+
+## Literature Review Results
