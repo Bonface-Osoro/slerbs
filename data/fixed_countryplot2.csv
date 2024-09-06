@@ -1,0 +1,201 @@
+country,type,access,model,sensor,platform,year,spec_band,min_band(nm),max_band(nm),publisher,standard_country,in_world_map,latitude,longitude,author_city
+United Kingdom,peer reviwed,Open Access,Tensorflow,"ultraviolet, X-ray","ground, satellite",2022,,,,Springer,United Kingdom,TRUE,,,
+Algeria,conference,Pay Wall,YOLOv5,MSI,satellite,2022,,450,745,IEEE,Algeria,TRUE,,,
+China,peer reviwed,Open Access,YOLO-modified,"RGB, LWIR","ground, multirotor",2023,,450,14000,MDPI,China,TRUE,43.8171,125.3235,Changchun
+India,peer reviwed,Pay Wall,YOLO-modified,RGB,ground,2024,,450,660,Elsevier,India,TRUE,,,
+India,conference,Pay Wall,KNN,HSI,satellite,2023,,450,1000,IEEE,India,TRUE,,,
+India,peer reviwed,Open Access,"YOLOv3, YOLOv4","RGB, NIR",ground,2022,,450,840,Springer,India,TRUE,,,
+India,conference,Pay Wall,YOLOv3,LWIR,ground,2020,,8000,14000,IEEE,India,TRUE,,,
+Taiwan,conference,Pay Wall,YOLOv4,RGB,ground,2023,,450,14000,IEEE,Taiwan,TRUE,,,
+China,peer reviwed,Open Access,CNN,MSI,satellite,2020,,450,900,IEEE,China,TRUE,30.5928,114.3052,Wuhan
+China,peer reviwed,Open Access,YOLO-modified,"RGB, LWIR",ground,2023,,450,14000,MDPI,China,TRUE,30.5928,114.3052,Wuhan
+China,peer reviwed,Pay Wall,YOLO-modified,"RGB, NIR",ground,2024,,450,2500,Elsevier,China,TRUE,31.8333,117.2857,Anhui
+Taiwan,peer reviwed,Pay Wall,YOLO-modified,"RGB, LWIR",ground,2023,,450,14000,IEEE,Taiwan,TRUE,,,
+China,peer reviwed,Open Access,YOLO-modified,"RGB, LWIR",ground,2022,,450,14000,MDPI,China,TRUE,32.0584,118.7965,Nanjing
+China,conference,Pay Wall,YOLO-modified,"RGB, LWIR",ground,2023,,450,14000,IEEE,China,TRUE,39.9042,116.4074,Beijing
+India,peer reviwed,Open Access,CNN,HSI,satellite,2022,,380,780,IEEE,India,TRUE,,,
+India,conference,Pay Wall,CNN,HSI,ground,2022,,380,780,IEEE,India,TRUE,,,
+France,conference,Open Access,YOLOv5,"MSI, RGB",ground,2023,,550,830,HAL,France,TRUE,,,
+Spain,peer reviwed,Open Access,YOLOv8,"RGB, MSI, LWIR",ground,2024,,400,14000,MDPI,Spain,TRUE,,,
+China,pre-print,Open Access,YOLO-modified,"RGB, LWIR",ground,2023,,450,14000,Arxiv,China,TRUE,30.5723,104.06667,Chengdu
+Vietnam,conference,Pay Wall,YOLOv4,"RGB, LWIR",ground,2021,,450,14000,IEEE,Viet Nam,FALSE,,,
+United States,peer reviwed,Pay Wall,YOLOv5,LWIR,ground,2024,,8000,14000,Elsevier,United States of America,TRUE,,,
+China,peer reviwed,Open Access,YOLOv5,MSI,ground,2023,,620,816,MDPI,China,TRUE,30.5928,114.3052,Wuhan
+China,peer reviwed,Open Access,Faster RCNN,"RGB, LWIR",ground,2020,,450,14000,Elsevier,China,TRUE,31.2304,121.4737,Shanghai
+China,peer reviwed,Pay Wall,R-FCN,"RGB, LWIR",ground,2020,,450,14000,Elsevier,China,TRUE,31.2304,121.4737,Shanghai
+China,peer reviwed,Open Access,YOLO-modified,LWIR,ground,2023,,8000,14000,IET,China,TRUE,32.0584,118.7965,Nanjing
+China,conference,Pay Wall,YOLOv4,"RGB, LWIR",ground,2021,,450,14000,IEEE,China,TRUE,34.7466,113.6253,Zhengzhou 
+China,pre-print,Open Access,YOLO-modified,"RGB, LWIR",ground,2024,,450,14000,Arxiv,China,TRUE,31.2304,121.4737,Shanghai
+Egypt,peer reviwed,Open Access,YOLO-modified,"RGB, LWIR",ground,2023,,450,14000,MDPI,Egypt,TRUE,,,
+Turkey,conference,Pay Wall,CNN,HSI,ground,2020,,380,1000,IEEE,Turkey,TRUE,,,
+Italy,conference,Pay Wall,R-CNN,MSI,satellite,2022,,490,2190,IEEE,Italy,TRUE,,,
+China,peer reviwed,Pay Wall,YOLO-modified,"RGB, NIR",ground,2022,,450,850,Elsevier,China,TRUE,39.9042,116.4074,Beijing
+Ireland,peer reviwed,Pay Wall,YOLOv5,LWIR,ground,2021,,8000,14000,IEEE,Ireland,TRUE,,,
+Ireland,peer reviwed,Open Access,YOLOv5,LWIR,ground,2022,,8000,14000,IEEE,Ireland,TRUE,,,
+United Kingdom,peer reviwed,Open Access,,"NDVI, CHL, ",multirotor,2020,,380,2500,MDPI,United Kingdom,TRUE,,,
+China,peer reviwed,Open Access,U-net,"RGB, MSI",satellite,2022,,443,2190,MDPI,China,TRUE,45.7567,126.6424,Harbin
+China,peer reviwed,Open Access,"YOLOv5, YOLOv7","RGB, NIR",multirotor,2023,,450,2500,MDPI,China,TRUE,44.3065,86.0349,Shihezi
+China,peer reviwed,Pay Wall,YOLO-modified,"RGB, LWIR",ground,2024,,450,14000,IEEE,China,TRUE,28.2278,112.9389,Changsha
+United States,peer reviwed,Open Access,YOLOv7,"RGB, LWIR",multirotor,2023,,450,1400,Nature,United States of America,TRUE,,,
+India,conference,Pay Wall,YOLOv3,"RGB, NIR",ground,2021,,750,12510,Springer,India,TRUE,,,
+China,peer reviwed,Pay Wall,YOLO-modified,"RGB, LWIR",ground,2024,,450,14000,Elsevier,China,TRUE,32.0584,118.7965,Nanjing
+Greece,peer reviwed,Pay Wall,Faster RCNN,"RGB, NIR",ground,2023,,370,1100,Elsevier,Greece,TRUE,,,
+Spain,conference,Pay Wall,YOLOv5,"RGB, NIR, NDVI",multirotor,2023,,450,840,IEEE,Spain,TRUE,,,
+Lithuania,peer reviwed,Open Access,Tensorflow,"Coastal, NIR, RGB, ",satellite,2021,,400,954,Springer,Lithuania,TRUE,,,
+Germany,peer reviwed,Pay Wall,CNN,MSI,satellite,2021,,453,2300,IEEE,Germany,TRUE,,,
+China,pre-print,Open Access,DETR,"RGB, LWIR","ground, aircraft",2024,,450,14000,Arxiv,China,TRUE,29.563,106.551,Chongqing
+China,peer reviwed,Open Access,YOLO-modified,"RGB, MSI",satellite,2022,,450,890,MDPI,China,TRUE,30.5928,114.3052,Wuhan
+China,conference,Pay Wall,YOLO-modified,"RGB, NIR",multirotor,2022,,350,1000,IEEE,China,TRUE,22.5429,114.0596,Shenzhen 
+Taiwan,peer reviwed,Open Access,YOLOv3,"RGB, LWIR",ground,2022,,450,14000,MDPI,Taiwan,TRUE,,,
+China,peer reviwed,Open Access,R-CNN,"RGB, LWIR",ground,2020,,450,14000,MDPI,China,TRUE,28.2278,112.9389,Changsha
+China,peer reviwed,Open Access,YOLO-modified,LWIR,ground,2022,,8000,14000,Springer,China,TRUE,34.2658,108.9541,Xi'an
+Taiwan,peer reviwed,Open Access,YOLO-modified,"RGB, LWIR",ground,2023,,450,14000,MDPI,Taiwan,TRUE,,,
+China,peer reviwed,Pay Wall,YOLO-modified,LWIR,ground,2023,,8000,14000,Elsevier,China,TRUE,26.0745,119.2965,Fuzhou
+South Korea,peer reviwed,Open Access,YOLO-modified,"RGB, MSI",ground,2024,,550,790,MDPI,South Korea,TRUE,,,
+China,peer reviwed,Pay Wall,YOLO-modified,"RGB, LWIR",ground,2022,,450,14000,IEEE,China,TRUE,32.0584,118.7965,Nanjing
+China,conference,Pay Wall,"YOLOX, YOLOv7, YOLOv8",LWIR,multirotor,2023,,9000,14000,Springer,China,TRUE,40.8415,111.752,Hohhot
+India,conference,Pay Wall,YOLOv3,"RGB, LWIR",ground,2020,,450,14000,IEEE,India,TRUE,,,
+South Korea,peer reviwed,Open Access,VGG,"RGB, LWIR",ground,2022,,450,14000,IEEE,South Korea,TRUE,,,
+China,peer reviwed,Pay Wall,CNN,MSI,satellite,2022,,453,2300,IEEE,China,TRUE,32.0584,118.7965,Nanjing
+Croatia,peer reviwed,Open Access,YOLOv3,LWIR,ground,2020,,8000,14000,IEEE,Croatia,TRUE,,,
+India,conference,Pay Wall,YOLOv5,MSI,multirotor,2020,,475,840,IEEE,India,TRUE,,,
+South Korea,peer reviwed,Open Access,SVM,"VNIR, HSI",ground,2021,,400,1000,MDPI,South Korea,TRUE,,,
+Philippines,conference,Pay Wall,YOLOv5,"RGB, LWIR",multirotor,2022,,450,14000,IEEE,Philippines,TRUE,,,
+China,peer reviwed,Pay Wall,YOLOv4,"RGB, HSI",ground,2022,,,,Elsevier,China,TRUE,32.6255,116.9998,Huainan
+South Korea,peer reviwed,Pay Wall,CNN,HSI,,2021,,1500,5000,IEEE,South Korea,TRUE,,,
+South Korea,peer reviwed,Open Access,SSD,"RGB, LWIR",ground,2024,,450,14000,MDPI,South Korea,TRUE,,,
+China,peer reviwed,Pay Wall,YOLOv5,"RGB, LWIR",ground,2023,,450,1400,IEEE,China,TRUE,30.5723,104.06667,Chengdu
+China,peer reviwed,Open Access,YOLO-modified,LWIR,satellite,2022,,800,1050,MDPI,China,TRUE,31.2304,121.4737,Shanghai
+China,peer reviwed,Open Access,YOLO-modified,"RGB, LWIR",ground,2021,,450,14000,IEEE,China,TRUE,34.7986,114.3076,Kaifeng
+China,peer reviwed,Pay Wall,YOLOv5,MSI,multirotor,2023,,550,790,Elsevier,China,TRUE,32.0584,118.7965,Nanjing
+China,peer reviwed,Open Access,YOLO-modified,"RGB, LWIR",ground,2020,,450,14000,IEEE,China,TRUE,34.7986,114.3076,Kaifeng
+China,peer reviwed,Pay Wall,YOLO-modified,"RGB, LWIR",ground,2022,,450,14000,IEEE,China,TRUE,22.5429,114.0596,Shenzhen 
+China,peer reviwed,Open Access,YOLO-modified,"RGB, MSI",multirotor,2023,,450,890,MDPI,China,TRUE,24.8797,102.8332,Kunming
+China,peer reviwed,Pay Wall,R-CNN,"RGB, LWIR",ground,2024,,450,14000,IEEE,China,TRUE,39.0842,117.2007,Tianjin
+China,peer reviwed,Pay Wall,YOLOv5,"RGB, IR",ground,2022,,450,1400,IEEE,China,TRUE,38.914,121.6147,Dalian
+China,peer reviwed,Pay Wall,CNN,HSI,,2023,,400,1000,IEEE,China,TRUE,39.9042,116.4074,Beijing
+South Korea,peer reviwed,Pay Wall,,"RGB, LCTF",ground,2021,,420,730,Elsevier,South Korea,TRUE,,,
+China,conference,Pay Wall,CNN,"HSI, MSI",satellite,2021,,450,1000,IEEE,China,TRUE,32.0584,118.7965,Nanjing
+China,peer reviwed,Open Access,YOLO-modified,LWIR,ground,2024,,8000,14000,Tech Science Press,China,TRUE,25.8311,114.935,Ganzhou
+Spain,peer reviwed,Pay Wall,YOLOv3,"RGB, LWIR",ground,2024,,450,14000,Elsevier,Spain,TRUE,,,
+Italy,peer reviwed,Pay Wall,YOLOv5,LWIR,ground,2023,,8000,14000,Elsevier,Italy,TRUE,,,
+United States,peer reviwed,Open Access,CNN,"RGB, LWIR",ground,2024,,450,14000,MDPI,United States of America,TRUE,,,
+Malaysia,conference,Pay Wall,YOLOv5,"RGB, LWIR",ground,2021,,450,14000,IEEE,Malaysia,TRUE,,,
+Tunisia,conference,Pay Wall,YOLOv5,"RGB, LWIR",ground,2022,,450,14000,IEEE,Tunisia,TRUE,,,
+Japan,peer reviwed,Open Access,"YOLOv4, YOLOv5",LWIR,ground,2022,,8000,14000,MDPI,Japan,TRUE,,,
+India,conference,Pay Wall,YOLO-modified,LWIR,ground,2021,,8000,14000,IEEE,India,TRUE,,,
+Japan,peer reviwed,Open Access,YOLOv3,"RGB, LWIR",ground,2021,,450,14000,MDPI,Japan,TRUE,,,
+Japan,conference,Pay Wall,YOLOv3,"RGB, LWIR",ground,2021,,450,14000,IEEE,Japan,TRUE,,,
+Pakistan,peer reviwed,Open Access,PC/BC-DIM,MSI,multirotor,2023,,660,790,IEEE,Pakistan,TRUE,,,
+Iceland,conference,Pay Wall,CNN,"HSI, MSI",satellite,2023,,450,1000,IEEE,Iceland,TRUE,,,
+Japan,conference,Pay Wall,YOLOv8,"RGB, LWIR",ground,2023,,450,14000,IEEE,Japan,TRUE,,,
+Brazil,peer reviwed,Open Access,CNN,"RGB, NDVI, NIR",multirotor,2020,,450,850,Elsevier,Brazil,TRUE,,,
+Columbia,peer reviwed,Open Access,YOLOv3,"RGB, NDVI",multirotor,2020,,550,790,MDPI,Colombia,TRUE,,,
+India,conference,Pay Wall,U-Net,MSI,satellite,2023,,450,900,IEEE,India,TRUE,,,
+India,peer reviwed,Pay Wall,U-net,HSI,multirotor,2023,,450,950,Springer,India,TRUE,,,
+South Korea,peer reviwed,Open Access,VGG,"NDVI, NDRE",multirotor,2021,,550,790,IEEE,South Korea,TRUE,,,
+Serbia,peer reviwed,Open Access,YOLOX,"RGB, SWIR",ground,2022,,400,2500,MDPI,Serbia,TRUE,,,
+China,peer reviwed,Pay Wall,YOLOv5,"RGB, MSI",ground,2023,,,,Taylor & Francis,China,TRUE,31.8333,117.2857,Anhui
+France,peer reviwed,Open Access,YOLO-modified,"RGB, LWIR","satellite, aircraft",2020,,450,780,MDPI,France,TRUE,,,
+India,conference,Pay Wall,SSN,HSI,,2023,,,,IEEE,India,TRUE,,,
+Pakistan,conference,Pay Wall,CNN,"RGB, MSI",satellite,2021,,450,2200,IEEE,Pakistan,TRUE,,,
+China,peer reviwed,Open Access,YOLO-modified,"RGB, MSI",ground,2023,,365,970,Frontiers,China,TRUE,24.8797,102.8332,Kunming
+China,peer reviwed,Pay Wall,"MSST, ResNet",HSI,ground,2024,,380,1000,IEEE,China,TRUE,39.9042,116.4074,Beijing
+China,peer reviwed,Open Access,YOLO-modified,"RGB, LWIR",aircraft,2022,,450,780,Elsevier,China,TRUE,39.9042,116.4074,Beijing
+Poland,peer reviwed,Open Access,YOLO-modified,"RGB, LWIR",ground,2022,,450,14000,MDPI,Poland,TRUE,,,
+Czech Republic,pre-print,Open Access,YOLO-modified,"RGB, MSI",ground,2023,,450,890,Arxiv,Czechia,TRUE,,,
+India,conference,Pay Wall,"AlexNet, VGG, ResNet",MSI,multirotor,2023,,470,840,IEEE,India,TRUE,,,
+India,conference,Pay Wall,"U-net, Res-net",MSI,multirotor,2020,,450,1000,IEEE,India,TRUE,,,
+China,peer reviwed,Open Access,YOLO-modified,"RGB, LWIR, NIR","ground, aircraft",2023,,450,14000,Elsevier,China,TRUE,31.4674,104.6791,Mianyang
+United States,peer reviwed,Open Access,YOLO-modified,"RGB, LWIR","satellite, aircraft",2020,,450,780,IEEE,United States of America,TRUE,,,
+China,peer reviwed,Open Access,YOLOv8,"RGB, MSI",multirotor,2024,,620,816,MDPI,China,TRUE,34.7466,113.6253,Zhengzhou
+China,peer reviwed,Pay Wall,"Transformer, CNN","RGB, LWIR","ground, aircraft",2024,,450,14000,Elsevier,China,TRUE,32.1896,119.425,Zhenjiang
+Sweden,conference,Pay Wall,CNN,"RGB, MSI",multirotor,2023,,475,840,IEEE,Sweden,TRUE,,,
+China,peer reviwed,Pay Wall,MMA,"RGB, LWIR",ground,2022,,450,14000,Elsevier,China,TRUE,32.1896,119.425,Zhenjiang
+China,peer reviwed,Open Access,CNN,"RGB, LWIR",ground,2022,,450,14000,Hindawi,China,TRUE,30.5928,114.3052,Wuhan
+China,peer reviwed,Open Access,"SOD, VGG","RGB, NIR",ground,2020,,450,850,IEEE,China,TRUE,39.9042,116.4074,Beijing
+China,peer reviwed,Pay Wall,YOLO-modified,"RGB, LWIR",ground,2021,,450,14000,Elsevier,China,TRUE,34.2658,108.9541,Xi'an
+Poland,peer reviwed,Open Access,R-CNN,"RGB, MSI",multirotor,2023,,450,890,MDPI,Poland,TRUE,,,
+Germany,peer reviwed,Pay Wall,Faster RCNN,"RGB, HSI",ground,2021,,450,1700,IEEE,Germany,TRUE,,,
+Portugal,peer reviwed,Open Access,"YOLOv2, YOLOv3, YOLOv4","RGB, MSI",multirotor,2022,,475,840,MDPI,Portugal,TRUE,,,
+China,peer reviwed,Open Access,GMD-YOLO,"RGB, LWIR",ground,2024,,450,14000,MDPI,China,TRUE,31.8107,119.9736,Changzhou
+China,peer reviwed,Open Access,YOLO-modified,LWIR,ground,2021,,8000,14000,IET,China,TRUE,45.7567,126.6424,Harbin
+China,peer reviwed,Open Access,YOLO-modified,SAR,satellite,2021,,1,180,MDPI,China,TRUE,31.2304,121.4737,Shanghai
+United States,peer reviwed,Open Access,Faster RCNN,"RGB, LWIR",ground,2024,,450,14000,MDPI,United States of America,TRUE,,,
+China,peer reviwed,Pay Wall,SVM,HSI,ground,2021,,450,950,Elsevier,China,TRUE,22.5429,114.0596,Shenzhen 
+Spain,peer reviwed,Open Access,YOLOv5,MSI,ground,2023,,475,842,IOPscience,Spain,TRUE,,,
+Germany,peer reviwed,Open Access,"CenterNet, EfficientDet, Faster R-CNN, YOLOv4","RGB, IR","satellite, multirotor",2022,,475,842,MDPI,Germany,TRUE,,,
+China,peer reviwed,Pay Wall,SVM,HSI,ground,2021,,,,Sensors Review,China,TRUE,39.9042,116.4074,Beijing
+China,peer reviwed,Open Access,YOLO-modified,MSI,multirotor,2024,,665,960,Elsevier,China,TRUE,26.0745,119.2965,Fuzhou
+China,peer reviwed,Pay Wall,YOLO-modified,"RGB, LWIR",ground,2023,,450,14000,Elsevier,China,TRUE,28.2278,112.9389,Changsha
+Taiwan,peer reviwed,Open Access,YOLOv4,RGB,ground,2021,,400,700,IEEE,Taiwan,TRUE,,,
+Germany,conference,Open Access,RCNN,"RGB, LWIR",ground,2020,,450,14000,-,Germany,TRUE,,,
+China,peer reviwed,Pay Wall,YOLOv5,"RGB, LWIR",ground,2023,,450,14000,Springer,China,TRUE,30.2741,120.1551,Hangzhou
+China,peer reviwed,Open Access,YOLO-modified,"RGB, LWIR",ground,2023,,450,14000,IEEE,China,TRUE,23.1291,113.2644,Guangzhou
+China,peer reviwed,Pay Wall,CNN,HSI,ground,2020,,470,620,IEEE,China,TRUE,32.0584,118.7965,Nanjing
+China,peer reviwed,Open Access,YOLO-modified,"RGB, MSI",multirotor,2024,,450,790,IEEE,China,TRUE,24.2884,116.1226,Meizhou
+China,peer reviwed,Open Access,YOLO-modified,RGB,aircraft,2020,,400,700,MDPI,China,TRUE,32.0584,118.7965,Nanjing
+China,peer reviwed,Open Access,YOLO-modified,RGB,aircraft,2021,,450,660,MDPI,China,TRUE,32.0584,118.7965,Nanjing
+China,peer reviwed,Open Access,YOLOv7,"RGB, MSI",multirotor,2024,,620,816,MDPI,China,TRUE,39.9042,116.4074,Beijing
+China,peer reviwed,Open Access,YOLO-modified,"RGB, MSI",satellite,2022,,450,890,IEEE,China,TRUE,39.9042,116.4074,Beijing
+China,conference,Pay Wall,U-Net,MSI,multirotor,2023,,450,840,IEEE,China,TRUE,25.2736,110.29,Guilin
+China,peer reviwed,Pay Wall,YOLO-modified,"RGB, LWIR",ground,2021,,450,780,Elsevier,China,TRUE,31.2304,121.4737,Shanghai
+China,peer reviwed,Open Access,Faster RCNN,"RGB, NIR",satellite,2022,,400,1000,MDPI,China,TRUE,39.9042,116.4074,Beijing
+China,peer reviwed,Pay Wall,VGG,"RGB, HSI",ground,2021,,400,1000,IEEE,China,TRUE,34.2658,108.9541,Xi'an
+China,peer reviwed,Open Access,YOLO-modified,"RGB, MSI",satellite,2022,,450,890,MDPI,China,TRUE,39.9042,116.4074,Beijing
+China,peer reviwed,Pay Wall,YOLO modified,"RGB, MSI",ground,2024,,450,890,Elsevier,China,TRUE,32.6255,116.9998,Huainan
+China,peer reviwed,Pay Wall,YOLOv3,MSI,ground,2023,,676,952,Elsevier,China,TRUE,31.5682,120.2886,Wuxi
+China,peer reviwed,Open Access,Point Transformer,"RGB, MWIR",aircraft,2024,,532,1550,IEEE,China,TRUE,30.5928,114.3052,Wuhan
+China,peer reviwed,Pay Wall,"Transformer, CNN","RGB, LWIR",ground,2023,,450,14000,IEEE,China,TRUE,32.0584,118.7965,Nanjing
+China,peer reviwed,Pay Wall,CNN,"HSI, MSI",satellite,2022,,450,1000,IEEE,China,TRUE,34.2658,108.9541,Xi'an
+China,peer reviwed,Pay Wall,YOLOv3,SWIR,ground,2022,,920,1700,IEEE,China,TRUE,30.2741,120.1551,Hangzhou
+China,peer reviwed,Open Access,Oriented R-CNN,"RGB, IR",multirotor,2024,,450,14000,Elsevier,China,TRUE,39.9042,116.4074,Beijing
+South Korea,peer reviwed,Open Access,CFN,"RGB, LWIR",ground,2022,,450,14000,MDPI,South Korea,TRUE,,,
+China,conference,Pay Wall,YOLO-modified,"RGB, LWIR",ground,2023,,450,14000,IEEE,China,TRUE,39.9042,116.4074,Beijing
+France,conference,Pay Wall,RCNN,"RGB, LWIR",ground,2020,,450,14000,IEEE,France,TRUE,,,
+China,peer reviwed,Open Access,YOLO-modified,"RGB, IR",aircraft,2023,,450,780,IEEE,China,TRUE,34.2658,108.9541,Xi'an
+China,peer reviwed,Open Access,CNN,HSI,aircraft,2020,,400,2500,MDPI,China,TRUE,39.9042,116.4074,Beijing
+China,peer reviwed,Open Access,YOLO-modified,LWIR,ground,2022,,8000,14000,IOPscience,China,TRUE,32.0584,118.7965,Nanjing
+China,peer reviwed,Pay Wall,CNN,HSI,satellite,2024,,400,1800,Springer,China,TRUE,38.0428,114.5149,Shijiazhuang
+China,peer reviwed,Open Access,YOLO-modified,LWIR,multirotor,2023,,9000,14000,MDPI,China,TRUE,34.2658,108.9541,Xi'an
+China,peer reviwed,Open Access,YOLO-modified,"RGB, LWIR","aircraft, ground",2024,,450,14000,MDPI,China,TRUE,39.9042,116.4074,Beijing
+China,conference,Pay Wall,R-CNN,"RGB, LWIR",ground,2023,,450,14000,IEEE,China,TRUE,22.8167,108.3669,Nanning
+China,peer reviwed,Pay Wall,YOLO-modified,LWIR,ground,2023,,8000,14000,Elsevier,China,TRUE,32.0584,118.7965,Nanjing
+China,peer reviwed,Pay Wall,Faster R-CNN,"RGB, LWIR",ground,2020,,450,14000,Springer,China,TRUE,32.0584,118.7965,Nanjing
+China,peer reviwed,Pay Wall,YOLO-modified,"RGB, LWIR",ground,2023,,450,14000,Elsevier,China,TRUE,43.8256,87.6168,Urumqi
+China,peer reviwed,Pay Wall,DETR,"RGB, IR",aircraft,2023,,450,780,IEEE,China,TRUE,39.9042,116.4074,Beijing
+China,peer reviwed,Pay Wall,CNN,HSI,aircraft,2020,,370,2510,IEEE,China,TRUE,28.2278,112.9389,Changsha
+China,peer reviwed,Pay Wall,YOLO-modified,LWIR,multirotor,2023,,8000,12000,Elsevier,China,TRUE,31.8107,119.9736,Changzhou
+China,peer reviwed,Open Access,YOLO-modified,SAR,satellite,2021,,1,180,MDPI,China,TRUE,39.9042,116.4074,Beijing
+China,peer reviwed,Pay Wall,YOLO-modified,SAR,satellite,2024,,1,180,Elsevier,China,TRUE,39.9042,116.4074,Beijing
+China,peer reviwed,Pay Wall,YOLO-modified,"RGB, LWIR","ground, multirotor",2024,,450,14000,IEEE,China,TRUE,22.5429,114.0596,Shenzhen 
+China,peer reviwed,Open Access,YOLO-modified,LWIR,ground,2023,,8000,14000,MDPI,China,TRUE,31.2304,121.4737,Shanghai
+China,peer reviwed,Open Access,YOLO-modified,LWIR,ground,2023,,8000,14000,MDPI,China,TRUE,30.5928,114.3052,Wuhan
+China,peer reviwed,Pay Wall,YOLO-modified,LWIR,ground,2023,,8000,14000,Elsevier,China,TRUE,22.5429,114.0596,Shenzhen 
+China,peer reviwed,Open Access,YOLO-modified,LWIR,multirotor,2023,,8000,14000,MDPI,China,TRUE,32.0584,118.7965,Nanjing
+China,conference,Open Access,YOLO-modified,LWIR,ground,2023,,8000,14000,IOPscience,China,TRUE,30.2741,120.1551,Hangzhou
+China,conference,Open Access,YOLO-modified,LWIR,ground,2021,,8000,14000,IOPscience,China,TRUE,34.2658,108.9541,Xi'an
+China,conference,Open Access,YOLO-modified,LWIR,ground,2020,,8000,14000,Springer,China,TRUE,24.8797,102.8332,Kunming
+China,peer reviwed,Open Access,YOLOv4,LWIR,multirotor,2023,,8000,14000,Nature,China,TRUE,24.8797,102.8332,Kunming
+South Korea,peer reviwed,Open Access,"YOLOv5, YOLOv8","RGB, LWIR",multirotor,2023,,450,14000,Nature,South Korea,TRUE,,,
+United States,peer reviwed,Open Access,"YOLOv5, YOLOv7","RGB, LWIR",multirotor,2023,,450,14000,Nature,United States of America,TRUE,,,
+China,peer reviwed,Open Access,YOLO-modified,RGB,ground,2024,,450,650,Nature,China,TRUE,26.0998,119.2966,Fujian
+China,conference,Pay Wall,YOLOv3,LWIR,ground,2021,,8000,14000,IEEE,China,TRUE,30.5928,114.3052,Wuhan
+China,conference,Pay Wall,YOLO-modified,LWIR,ground,2022,,8000,14000,IEEE,China,TRUE,34.2658,108.9541,Xi'an
+France,conference,Pay Wall,YOLO-modified,LWIR,ground,2024,,950,1200,IEEE,France,TRUE,,,
+China,peer reviwed,Open Access,YOLO-modified,LWIR,multirotor,2024,,8000,14000,Springer,China,TRUE,36.0611,103.8343,Lanzhou
+Bangladesh,conference,Pay Wall,YOLO-modified,LWIR,ground,2021,,8000,14000,IEEE,Bangladesh,TRUE,,,
+China,peer reviwed,Open Access,YOLO-modified,LWIR,ground,2024,,8000,14000,MDPI,China,TRUE,38.914,121.6147,Dalian
+China,peer reviwed,Open Access,YOLO-modified,LWIR,ground,2022,,8000,14000,MDPI,China,TRUE,30.5928,114.3052,Wuhan
+China,peer reviwed,Pay Wall,YOLO-modified,LWIR,ground,2022,,8000,14000,Springer,China,TRUE,31.2304,121.4737,Shanghai
+United States,peer reviwed,Open Access,YOLOv4,LWIR,ground,2021,,8000,14000,SSRN,United States of America,TRUE,,,
+China,peer reviwed,Pay Wall,YOLO-modified,SAR,satellite,2022,,400,780,IEEE,China,TRUE,45.7567,126.6424,Harbin
+China,conference,Pay Wall,YOLO-modified,LWIR,ground,2022,,8000,14000,IEEE,China,TRUE,34.2658,108.9541,Xi'an
+China,peer reviwed,Open Access,YOLO-modified,LWIR,ground,2023,,8000,14000,MDPI,China,TRUE,25.2736,110.29,Guilin
+United States,conference,Pay Wall,CNN,NIR,ground,2020,,800,2500,IEEE,United States of America,TRUE,,,
+China,conference,Pay Wall,YOLO-modified,LWIR,ground,2023,,8000,14000,Springer,China,TRUE,39.0842,117.2007,Tianjin
+China,peer reviwed,Open Access,YOLO-modified,LWIR,ground,2023,,8000,14000,JNI,China,TRUE,39.9042,116.4074,Beijing
+Germany,peer reviwed,Open Access,YOLO-modified,LWIR,ground,2023,,8000,14000,Helmut Schmidt University,Germany,TRUE,,,
+Chile,conference,Open Access,YOLO-modified,NIR,ground,2023,,700,1000,Springer,Chile,TRUE,,,
+China,peer reviwed,Open Access,YOLO-modified,SAR,satellite,2021,,1,180,MDPI,China,TRUE,28.2278,112.9389,Changsha
+Australia,pre-print,Open Access,YOLO-modified,HIS,ground,2023,,470,620,Arxiv,Australia,TRUE,,,
