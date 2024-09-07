@@ -27,3 +27,11 @@ questions are:
 </p>
 
 ## Literature Review Results
+In `Figure 1` the spatial distribution of the location of authors and the number 
+of papers published is shown globally and then for USA and China where the highest 
+number of research on relationship between broadband and SDGs was recorded. 
+
+#### Figure 2 .
+<p align="center">
+  <img src="/docs/article_maps.png" />
+</p>
