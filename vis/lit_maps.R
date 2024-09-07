@@ -123,7 +123,11 @@ usa_plot <-
         segment.color = "black", segment.size = 0.3,
         nudge_x = ifelse(usa_cities_to_label$longitude > mean(continental_usa_map$long), 1, -1),
         nudge_y = ifelse(usa_cities_to_label$latitude > mean(continental_usa_map$lat), 1, -1),
-        direction = "both", label.size = NA, show.legend = FALSE)
+        direction = "both", label.size = NA, show.legend = FALSE) +
+  scale_fill_manual(values = c("#FAEBD7", "#CDC0B0", "azure3", "#EEC591", 
+        "#8B7356", "#CDC8B1", "#CDC1C5", "#8B8386", "#CDC9A5", "#CDAF95", 
+        "#EED8AE", "#CDC5BF", "#FFF5EE", "#CDB5CD", "#FFDAB9", "#CD8500",
+        "#6B8E23", "#CD8162", "#68838B")) 
 
 ##################
 ## CHINA PLOT  ###
@@ -167,6 +171,10 @@ china_plot <-
        nudge_x = ifelse(cities_to_label$longitude > mean(china_map$long), 1, -1),
        nudge_y = ifelse(cities_to_label$latitude > mean(china_map$lat), 1, -1),
        direction = "both", label.size = NA, show.legend = FALSE) +
+  scale_fill_manual(values = c("#FAEBD7", "#CDC0B0", "azure3", "#EEC591", 
+      "#8B7356", "#CDC8B1", "#CDC1C5", "#8B8386", "#CDC9A5", "#CDAF95", 
+      "#EED8AE", "#CDC5BF", "#FFF5EE", "#CDB5CD", "#FFDAB9", "#CD8500",
+      "#6B8E23", "#CD8162", "#68838B")) +
   ggspatial::annotation_north_arrow(
     location = "tr", which_north = "true",
     pad_x = unit(0.1, "in"), pad_y = unit(0.1, "in"),
@@ -228,7 +236,7 @@ combined <- ggarrange(map_plot, top_3, nrow = 2,
           common.legend = FALSE, legend='bottom') 
 
 path = file.path(folder, 'figures', 'article_maps.png')
-png(path, units="in", width=10, height=10, res=300)
+png(path, units="in", width=12, height=11, res=300)
 print(combined)
 dev.off()
 
