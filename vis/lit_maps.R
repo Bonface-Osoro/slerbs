@@ -9,6 +9,9 @@ library(ggspatial)
 suppressMessages(library(tidyverse))
 folder <- dirname(rstudioapi::getSourceEditorContext()$path)
 
+#########################
+## WORLD AUTHOR PLOT  ###
+#########################
 filename <- 'literature_coordinates.csv'
 data <- read.csv(file.path(folder, "..", "results", filename), stringsAsFactors = FALSE)
 
@@ -40,14 +43,11 @@ custom_palette <- c("beige", viridis(n = length(labels) - 1, direction = -1,
     begin = 0.1, end = 0.9))
 names(custom_palette) <- labels
 
-ggplot(df1, aes(x = longitude, y = latitude)) +
-  geom_point(color = "blue", size = 3)
-
 map_plot <-
   ggplot(world_data, aes(x = long, y = lat, group = group, fill = total_count)) +
   geom_polygon(color = "gray80", linewidth = 0.2) +  
   expand_limits(x = world_data$long, y = world_data$lat) +
-  scale_fill_manual(values = custom_palette, name = "Papers per Country", drop = FALSE) +
+  scale_fill_brewer(palette = "Paired") +
   labs(colour = NULL, 
        title = "(a) Quantity of First-Author Broadband Sustainability Papers.",
        subtitle = "Spatial distribution of papers by country.",
@@ -63,8 +63,7 @@ map_plot <-
     legend.text = element_text(size = 8),
     axis.title.x = element_text(size = 10)
   ) +
-  guides(fill = guide_legend(title = "Count", reverse = FALSE, nrow = 1)) +
-  annotation_scale(location = "bl", width_hint = 0.5) + 
+  guides(fill = guide_legend(title = "Papers per Country", reverse = FALSE, nrow = 1)) +
   ggspatial::annotation_north_arrow(
     location = "tr", which_north = "true",
     pad_x = unit(0.1, "in"), pad_y = unit(0.1, "in"),
@@ -75,7 +74,163 @@ map_plot <-
     )
   ) 
 
+################
+## USA PLOT  ###
+################
+usa_data <- data %>%
+  filter(country == "USA") 
 
+continental_usa_data <- usa_data %>%
+  filter(longitude >= -125, longitude <= -67,
+         latitude >= 24, latitude <= 50)
+
+df2 = continental_usa_data %>%
+  group_by(author_city, latitude, longitude) %>%
+  summarize(total_city = sum(number)) 
+
+usa_map <- map_data("world", region = "USA")
+continental_usa_map <- usa_map %>%
+  filter(long >= -125, long <= -67, lat >= 24, lat <= 50)
+
+usa_cities_to_label <- df2 %>% filter(total_city >= 1)
+
+usa_plot <- 
+  ggplot() +
+  geom_polygon(data = continental_usa_map, aes(x = long, y = lat, group = group), 
+               fill = "grey", colour = "white") +
+  geom_point(data = df2, aes(x = longitude, y = latitude, size = total_city, 
+            show.legend = FALSE), alpha = 0.7) +
+  scale_size(range = c(3, 10), name = "Number of Publications") +
+  labs(title = "(b) Number of authors per major cities.",
+       subtitle = "USA",
+       x = "Longitude", y = "Latitude") +
+  theme(axis.text.x = element_text(size = 10),
+        panel.spacing = unit(0.6, "lines"),
+        plot.title = element_text(size = 11, face = "bold"),
+        plot.subtitle = element_text(size = 11),
+        axis.text.y = element_text(size = 10),
+        legend.title = element_text(size = 8),
+        legend.text = element_text(size = 8),
+        legend.position = "right",
+        legend.box = "vertical",
+        legend.key.size = unit(1, "cm"),
+        legend.box.margin = margin(l = 10),
+        axis.title.x = element_text(size = 10)) +
+  geom_label_repel(data = usa_cities_to_label, aes(x = longitude, y = latitude,
+        label = author_city, fill = author_city), color = "black",
+        fontface = "bold", size = 3, box.padding = 1.0, point.padding = 0.3,
+        min.segment.length = 0, max.overlaps = Inf, force = 25, max.time = 2,
+        segment.color = "black", segment.size = 0.3,
+        nudge_x = ifelse(usa_cities_to_label$longitude > mean(continental_usa_map$long), 1, -1),
+        nudge_y = ifelse(usa_cities_to_label$latitude > mean(continental_usa_map$lat), 1, -1),
+        direction = "both", label.size = NA, show.legend = FALSE)
+
+##################
+## CHINA PLOT  ###
+##################
+china_data <- data %>%
+  filter(country == "China")
+
+df3 = china_data %>%
+  group_by(author_city, latitude, longitude) %>%
+  summarize(total_city = sum(number)) 
+
+china_map <- map_data("world", region = "China")
+
+cities_to_label <- df3 %>% filter(total_city >= 1)
+
+china_plot <- 
+  ggplot() +
+  geom_polygon(data = china_map, aes(x = long, y = lat, group = group), 
+               fill = "grey", colour = "white") +
+  geom_point(data = df3, aes(x = longitude, y = latitude, size = total_city, 
+                             show.legend = FALSE), alpha = 0.7) +
+  scale_size(range = c(3, 10), name = "Number of Publications") +
+  labs(title = " ", subtitle = "China", x = "Longitude", y = "Latitude") +
+  theme(axis.text.x = element_text(size = 10),
+    panel.spacing = unit(0.6, "lines"),
+    plot.title = element_text(size = 11, face = "bold"),
+    plot.subtitle = element_text(size = 11),
+    axis.text.y = element_text(size = 10),
+    legend.title = element_text(size = 8),
+    legend.text = element_text(size = 8),
+    legend.position = "right",
+    legend.box = "vertical",
+    legend.key.size = unit(1, "cm"),
+    legend.box.margin = margin(l = 10),
+    axis.title.x = element_text(size = 10)) +
+  geom_label_repel(data = cities_to_label, aes(x = longitude, y = latitude,
+       label = author_city, fill = author_city), color = "black",
+       fontface = "bold", size = 3, box.padding = 1.0, point.padding = 0.3,
+       min.segment.length = 0, max.overlaps = Inf, force = 25, max.time = 2,
+       segment.color = "black", segment.size = 0.3,
+       nudge_x = ifelse(cities_to_label$longitude > mean(china_map$long), 1, -1),
+       nudge_y = ifelse(cities_to_label$latitude > mean(china_map$lat), 1, -1),
+       direction = "both", label.size = NA, show.legend = FALSE) +
+  ggspatial::annotation_north_arrow(
+    location = "tr", which_north = "true",
+    pad_x = unit(0.1, "in"), pad_y = unit(0.1, "in"),
+    style = ggspatial::north_arrow_nautical(
+      fill = c("grey40", "white"),
+      line_col = "grey20",
+      text_family = "ArcherPro Book"
+    )
+  ) 
+
+##################
+## INDIA PLOT  ###
+##################
+india_data <- data %>%
+  filter(country == "India") 
+
+df4 = india_data %>%
+  group_by(author_city, latitude, longitude) %>%
+  summarize(total_city = sum(number)) 
+
+india_map <- map_data("world", region = "India")
+
+india_cities_to_label <- df4 %>% filter(total_city >= 1)
+
+india_plot <- 
+  ggplot() +
+  geom_polygon(data = india_map, aes(x = long, y = lat, group = group), 
+               fill = "beige", colour = "white") +
+  geom_point(data = df4, aes(x = longitude, y = latitude, size = total_city, 
+                             show.legend = FALSE), alpha = 0.7) +
+  scale_size(range = c(3, 10), name = "Number of Publications") +
+  scale_fill_brewer(palette = "Spectral") +
+  labs(title = " ", subtitle = "(d) India",  x = "Longitude", y = "Latitude") +
+  theme(axis.text.x = element_text(size = 10),
+        panel.spacing = unit(0.6, "lines"),
+        plot.title = element_text(size = 11, face = "bold"),
+        plot.subtitle = element_text(size = 9, face = "bold"),
+        axis.text.y = element_text(size = 10),
+        legend.title = element_text(size = 8),
+        legend.text = element_text(size = 8),
+        legend.position = "right",
+        legend.box = "vertical",
+        legend.key.size = unit(1, "cm"),
+        legend.box.margin = margin(l = 10),
+        axis.title.x = element_text(size = 10)) +
+  geom_label_repel(data = india_cities_to_label, aes(x = longitude, y = latitude,
+      label = author_city, fill = author_city), color = "black",
+      fontface = "bold", size = 3, box.padding = 1.0, point.padding = 0.3,
+      min.segment.length = 0, max.overlaps = Inf, force = 25, max.time = 2,
+      segment.color = "black", segment.size = 0.3,
+      nudge_x = ifelse(india_cities_to_label$longitude > mean(india_map$long), 1, -1),
+      nudge_y = ifelse(india_cities_to_label$latitude > mean(india_map$lat), 1, -1),
+      direction = "both", label.size = NA, show.legend = FALSE)
+
+top_3 <- ggarrange(usa_plot, china_plot, ncol = 2, 
+                   common.legend = TRUE, legend='bottom') 
+
+combined <- ggarrange(map_plot, top_3, nrow = 2, 
+          common.legend = FALSE, legend='bottom') 
+
+path = file.path(folder, 'figures', 'article_maps.png')
+png(path, units="in", width=10, height=10, res=300)
+print(combined)
+dev.off()
 
 
 
