@@ -1,6 +1,7 @@
 library(ggpubr)
 library(ggplot2)
 library(tidyverse)
+library(ggtext)
 
 suppressMessages(library(tidyverse))
 folder <- dirname(rstudioapi::getSourceEditorContext()$path)
@@ -12,7 +13,7 @@ data <- read.csv(file.path(folder, '..', 'data',
 ## ARTICLES BY PUBLISHER ###
 ############################
 df = data %>%
-  group_by(publisher, access) %>%
+  group_by(publisher, continent) %>%
   summarize(total_arts = sum(number)) 
 
 label_totals <- df %>%
@@ -21,12 +22,13 @@ label_totals <- df %>%
 
 publisher_tots <-
   ggplot(df, aes(x = publisher, y = total_arts)) +
-  geom_bar(stat = "identity", aes(fill = access)) + 
+  geom_bar(stat = "identity", aes(fill = continent)) + 
   geom_text(data = label_totals, aes(x = publisher, y = total_value, 
       label = sprintf("%.0f", total_value)), size = 3,
       position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
+  scale_fill_brewer(palette = "Paired") +
   labs(colour = NULL, title = "(a) Papers by Publisher.",
-       subtitle = "Results broken down by access.",
+       subtitle = "Results broken down by continent.",
        x = NULL, y = " ") + 
   theme(
     legend.position = 'bottom',
@@ -40,7 +42,7 @@ publisher_tots <-
     legend.text = element_text(size = 8),
     axis.title.x = element_text(size = 7)
   ) + expand_limits(y = 0) +
-  guides(fill = guide_legend(ncol = 6, title = 'Access')) +
+  guides(fill = guide_legend(ncol = 3, title = 'Continent')) +
   scale_x_discrete(expand = c(0, 0.15)) + scale_y_continuous(expand = c(0, 0),
   labels = function(y)format(y, scientific = FALSE), limit = c(0, 60))
 
@@ -59,7 +61,7 @@ df$SDG <- factor(df$SDG,
 
 df$income <- factor(df$income,
    levels = c('LMC', 'UMC', 'HIC', 'Global', 'None'),
-   labels = c('LMC', 'UMC', 'HIC', 'Global', 'None'))
+   labels = c('LIC', 'UMC', 'HIC', 'Global', 'None'))
 
 label_totals <- df %>%
   group_by(SDG) %>%
@@ -71,6 +73,7 @@ sdg_tots <-
   geom_text(data = label_totals, aes(x = SDG, y = total_value, 
       label = sprintf("%.0f", total_value)), size = 3,
       position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
+  scale_fill_brewer(palette = "Paired") +
   labs(colour = NULL, title = "(b) Papers by SDG Addressed.",
        subtitle = "Results broken down by case-study country's income group.",
        x = NULL, y = bquote("Number of Reviewed Papers")) + 
@@ -108,7 +111,7 @@ df$Application <- factor(df$Application,
 
 df$income <- factor(df$income,
               levels = c('LMC', 'UMC', 'HIC', 'Global', 'None'),
-              labels = c('LMC', 'UMC', 'HIC', 'Global', 'None'))
+              labels = c('LIC', 'UMC', 'HIC', 'Global', 'None'))
 
 label_totals <- df %>%
   group_by(Application) %>%
@@ -120,7 +123,7 @@ apps_tots <-
   geom_text(data = label_totals, aes(x = Application, y = total_value, 
                                      label = sprintf("%.0f", total_value)), size = 3,
             position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
-  #scale_fill_brewer(palette = "Paired") +
+  scale_fill_brewer(palette = "Paired") +
   labs(colour = NULL, title = "(b) Papers by Application Areas.",
        subtitle = "Results broken down by case-study country's income group.",
        x = NULL, y = bquote("Number of Reviewed Papers")) + 
@@ -167,6 +170,7 @@ method_tots <-
   geom_text(data = label_totals, aes(x = Methodology, y = total_value, 
        label = sprintf("%.0f", total_value)), size = 3,
        position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
+  scale_fill_brewer(palette = "Paired") +
   labs(colour = NULL, title = "(d) Methodology used in the Papers.",
        subtitle = "Results broken down by availability of open source code.",
        x = NULL, y = bquote("Number of Reviewed Papers")) + 
@@ -191,16 +195,16 @@ method_tots <-
 ## ARTICLES BY SPATIAL FOCUS ###
 ################################
 df = data %>%
-  group_by(spatial_focus, income) %>%
+  group_by(spatial_focus, continent) %>%
   summarize(total_spat = sum(number)) 
 
 df$spatial_focus <- factor(df$spatial_focus,
    levels = c('Remote', 'Rural', 'Urban', 'Not Applicable', 'All'),
    labels = c('Remote', 'Rural', 'Urban', 'Not \nApplicable', 'All'))
 
-df$income <- factor(df$income,
-   levels = c('LMC', 'UMC', 'HIC', 'Global', 'None'),
-   labels = c('LMC', 'UMC', 'HIC', 'Global', 'None'))
+#df$income <- factor(df$income,
+   #levels = c('LMC', 'UMC', 'HIC', 'Global', 'None'),
+   #labels = c('LIC', 'UMC', 'HIC', 'Global', 'None'))
 
 label_totals <- df %>%
   group_by(spatial_focus) %>%
@@ -208,12 +212,13 @@ label_totals <- df %>%
 
 spatial_tots <-
   ggplot(df, aes(x = spatial_focus, y = total_spat)) +
-  geom_bar(stat = "identity", aes(fill = income)) + coord_flip() + 
+  geom_bar(stat = "identity", aes(fill = continent)) + coord_flip() + 
   geom_text(data = label_totals, aes(x = spatial_focus, y = total_value, 
      label = sprintf("%.0f", total_value)), size = 3,
      position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
+  scale_fill_brewer(palette = "Paired") +
   labs(colour = NULL, title = "(e) Spatial Focus of Papers.",
-       subtitle = "Results broken by case-study country's income group.",
+       subtitle = "Results broken by case-study country's continent group.",
        x = NULL, y = bquote("Number of Reviewed Papers")) + 
   theme(
     legend.position = 'bottom',
@@ -227,7 +232,7 @@ spatial_tots <-
     legend.text = element_text(size = 8),
     axis.title.x = element_text(size = 7)
   ) + expand_limits(y = 0) +
-  guides(fill = guide_legend(ncol = 6, title = 'Income Group')) +
+  guides(fill = guide_legend(ncol = 3, title = 'Continent')) +
   scale_x_discrete(expand = c(0, 0.15)) + scale_y_continuous(expand = c(0, 0),
   labels = function(y)format(y, scientific = FALSE), limit = c(0, 74))
 
@@ -257,6 +262,7 @@ technology_tots <-
   geom_text(data = label_totals, aes(x = technology, y = total_value, 
      label = sprintf("%.0f", total_value)), size = 3,
      position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
+  scale_fill_brewer(palette = "Paired") +
   labs(colour = NULL, title = "(f) Key Technology Focus of Papers.",
        subtitle = "Results broken by taraget users.",
        x = NULL, y = bquote("Number of Reviewed Papers")) + 

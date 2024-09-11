@@ -2,21 +2,23 @@
 This is a repository for quantifying the amount of scientific articles focusing 
 on the role of broadband in supporting Sustainable Development Goals (SDGs). 
 
-Few studies have fully investigated the link between universal broadband access, 
-SDGs and environmental sustainability. Understandably, most broadband research 
-focuses on the cost and technical solutions for providing last mile connectivity. 
-However, there is need to underscore the importance of broadband in realizing SDGs. 
-Documenting and highlighting the role of broadband in realization of the SDGs 
-increases the likelihood of policy makers and analysts in prioritizing and 
-deploying broadband. Therefore, the goal of this paper is to provide a survey 
-and review the research that demonstrate the importance of broadband in 
-supporting SDGs and environmental sustainability. Specifically, the research 
-questions are:
+Several developing economies are yet to meet the targets of the SDGs, especially 
+the Low-Income Countries (LICs). On the other hand, Upper Middle-Income Countries 
+(UMCs) and High-Income Countries (HICs) have made significant steps in addressing 
+SDGs with key milestones in broadband deployment. Surprisingly, few studies have 
+fully investigated the link between universal broadband access, SDGs and environmental 
+sustainability for different economies. Understandably, most broadband research focuses 
+on the cost and technical solutions for providing last mile connectivity. However, there 
+is need to underscore the importance of broadband in realizing SDGs. Documenting and 
+highlighting the role of broadband in realization of the SDGs increases the likelihood 
+of policy makers and analysts in prioritizing and deploying broadband. Therefore, the 
+goal of this paper is to provide a survey and review the research that demonstrate the 
+importance of broadband in supporting SDGs and environmental sustainability. 
+Specifically, the research questions are:
 
 1.	What are the major SDGs linked to broadband connectivity?
-2.	Which development areas have benefited from broadband connectivity?
-3.	What are the dominant techniques and scopes of broadband connectivity, SDG 
-    and environmental sustainability studies?
+2.	What are the key broadband technologies for different target areas?
+3.	What are the main challenges and future directions on broadband sustainability research?
 
  `Figure 1` shows the outline of the Preferred Reporting Items for Systematic 
  Reviews and Meta-Analyses (PRISMA) followed in the literature.  
@@ -27,8 +29,8 @@ questions are:
 </p>
 
 ## Literature Review Results
-In `Figure 2` the spatial distribution of the location of authors and the number 
-of papers published is shown globally and then for USA and China where the highest 
+In `Figure 2` the spatial distribution of the location of authors. The number 
+of papers published is shown globally as well as for USA and China where the highest 
 number of research on relationship between broadband and SDGs was recorded. 
 
 #### Figure 2 .

@@ -2,7 +2,11 @@ library(ggplot2)
 library(dplyr)
 library(tidyr)
 library(sf)
+library(ggpubr)
 library(ggspatial)
+library(ggplot2)
+library(ggsankey)
+library(ggrepel)
 
 # Get relative path of fold containing this code
 # Import data
@@ -39,10 +43,6 @@ labels <- c('0', '1', '2', '3', '4', '5', '7', '10', '21', '25')
 world_data$total_count <- cut(world_data$total_count, breaks = breaks,
     labels = labels, include.lowest = TRUE, right = FALSE)
 
-custom_palette <- c("beige", viridis(n = length(labels) - 1, direction = -1,
-    begin = 0.1, end = 0.9))
-names(custom_palette) <- labels
-
 map_plot <-
   ggplot(world_data, aes(x = long, y = lat, group = group, fill = total_count)) +
   geom_polygon(color = "gray80", linewidth = 0.2) +  
@@ -56,8 +56,8 @@ map_plot <-
     legend.position = 'bottom',
     axis.text.x = element_text(size = 10),
     panel.spacing = unit(0.6, "lines"),
-    plot.title = element_text(size = 11, face = "bold"),
-    plot.subtitle = element_text(size = 9),
+    plot.title = element_text(size = 12, face = "bold"),
+    plot.subtitle = element_text(size = 11),
     axis.text.y = element_text(size = 10),
     legend.title = element_text(size = 8),
     legend.text = element_text(size = 8),
@@ -97,16 +97,16 @@ usa_cities_to_label <- df2 %>% filter(total_city >= 1)
 usa_plot <- 
   ggplot() +
   geom_polygon(data = continental_usa_map, aes(x = long, y = lat, group = group), 
-               fill = "grey", colour = "white") +
+               fill = "gray", colour = "white") +
   geom_point(data = df2, aes(x = longitude, y = latitude, size = total_city, 
             show.legend = FALSE), alpha = 0.7) +
-  scale_size(range = c(3, 10), name = "Number of Publications") +
-  labs(title = "(b) Number of authors per major cities.",
+  scale_size(range = c(3, 10), name = "Number of Publications") + 
+  labs(title = "(b) Number of authors per city in countries with over 20 authors.",
        subtitle = "USA",
        x = "Longitude", y = "Latitude") +
   theme(axis.text.x = element_text(size = 10),
         panel.spacing = unit(0.6, "lines"),
-        plot.title = element_text(size = 11, face = "bold"),
+        plot.title = element_text(size = 12, face = "bold"),
         plot.subtitle = element_text(size = 11),
         axis.text.y = element_text(size = 10),
         legend.title = element_text(size = 8),
@@ -153,7 +153,7 @@ china_plot <-
   labs(title = " ", subtitle = "China", x = "Longitude", y = "Latitude") +
   theme(axis.text.x = element_text(size = 10),
     panel.spacing = unit(0.6, "lines"),
-    plot.title = element_text(size = 11, face = "bold"),
+    plot.title = element_text(size = 12, face = "bold"),
     plot.subtitle = element_text(size = 11),
     axis.text.y = element_text(size = 10),
     legend.title = element_text(size = 8),
@@ -210,8 +210,8 @@ india_plot <-
   labs(title = " ", subtitle = "(d) India",  x = "Longitude", y = "Latitude") +
   theme(axis.text.x = element_text(size = 10),
         panel.spacing = unit(0.6, "lines"),
-        plot.title = element_text(size = 11, face = "bold"),
-        plot.subtitle = element_text(size = 9, face = "bold"),
+        plot.title = element_text(size = 12, face = "bold"),
+        plot.subtitle = element_text(size = 11, face = "bold"),
         axis.text.y = element_text(size = 10),
         legend.title = element_text(size = 8),
         legend.text = element_text(size = 8),
@@ -233,13 +233,46 @@ top_3 <- ggarrange(usa_plot, china_plot, ncol = 2,
                    common.legend = TRUE, legend='bottom') 
 
 combined <- ggarrange(map_plot, top_3, nrow = 2, 
-          common.legend = FALSE, legend='bottom') 
+          common.legend = FALSE, legend='bottom', heights = c(5, 3)) 
 
 path = file.path(folder, 'figures', 'article_maps.png')
-png(path, units="in", width=12, height=11, res=300)
+png(path, units="in", width=11, height=10, res=300)
 print(combined)
 dev.off()
 
+######################
+## Country Sankey  ###
+######################
+df <- data %>%
+  rename_with(~ str_replace_all(., "_", " ") %>% str_to_title(), 
+              .cols = c("country", "income", "spatial_focus"))
 
+df_long <- df %>%
+  make_long(`Country`, `Income`, `Spatial Focus`) %>%  
+  mutate(x = str_to_title(x)) 
+  
+sankey_plot <- ggplot(df_long, aes(x = x, next_x = next_x, node = node,
+                      next_node = next_node, fill = factor(node),
+                      label = node))
+sankey_plot <- sankey_plot + geom_sankey(flow.alpha = 0.5, 
+               node.color = "black", show.legend = FALSE) +
+  geom_sankey_label(size = 3, color = "black", fill = "white",hjust = 0) + 
+    scale_fill_viridis_d() +
+    theme(plot.title = element_text(hjust = 0.5, face = "bold", size = rel(1.2)),
+      plot.subtitle = element_text(hjust = 0.5),
+      axis.title = element_blank(),
+      axis.text.y = element_blank(),
+      axis.ticks = element_blank(),
+      panel.grid = element_blank(),
+      panel.background = element_rect(fill = "white"),
+      panel.border = element_blank(),
+      plot.background = element_rect(fill = "white"),
+      legend.position = "none"
+    ) +
+  labs(title = "First Author Country and Research Area Breakdown",
+       subtitle = "Country income classification and targeted user's area investigated", # Set subtitle
+         x = NULL,
+         y = NULL)
 
-
+path = file.path(folder, 'figures', 'country_sankey.png')
+ggsave(path, sankey_plot, width = 8, height = 8, units = "in")
