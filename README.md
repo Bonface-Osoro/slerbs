@@ -1,6 +1,4 @@
-# Systematic Literature Review for Broadband Sustainability (slerbs)
-This is a repository for quantifying the amount of scientific articles focusing 
-on the role of broadband in supporting Sustainable Development Goals (SDGs). 
+# Systematic Literature Review for Broadband Sustainability (slerbs) 
 
 Several developing economies are yet to meet the targets of the SDGs, especially 
 the Low-Income Countries (LICs). On the other hand, Upper Middle-Income Countries 
@@ -25,7 +23,7 @@ Specifically, the research questions are:
 
 #### Figure 1 .
 <p align="center">
-  <img src="/docs/broslire.png" />
+  <img src="/docs/flowchart.png" />
 </p>
 
 ## Literature Review Results
@@ -35,5 +33,5 @@ number of research on relationship between broadband and SDGs was recorded.
 
 #### Figure 2 .
 <p align="center">
-  <img src="/docs/article_maps.png" />
+  <img src="/docs/author_maps.png" />
 </p>
