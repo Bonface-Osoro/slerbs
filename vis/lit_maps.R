@@ -257,22 +257,28 @@ sankey_plot <- ggplot(df_long, aes(x = x, next_x = next_x, node = node,
 sankey_plot <- sankey_plot + geom_sankey(flow.alpha = 0.5, 
                node.color = "black", show.legend = FALSE) +
   geom_sankey_label(size = 3, color = "black", fill = "white",hjust = 0) + 
-    scale_fill_viridis_d() +
-    theme(plot.title = element_text(hjust = 0.5, face = "bold", size = rel(1.2)),
-      plot.subtitle = element_text(hjust = 0.5),
-      axis.title = element_blank(),
-      axis.text.y = element_blank(),
-      axis.ticks = element_blank(),
-      panel.grid = element_blank(),
-      panel.background = element_rect(fill = "white"),
-      panel.border = element_blank(),
-      plot.background = element_rect(fill = "white"),
-      legend.position = "none"
-    ) +
-  labs(title = "First Author Country and Research Area Breakdown",
+  labs(title = "First author's country and research focus breakdown.",
        subtitle = "Country income classification and targeted user's area investigated", # Set subtitle
-         x = NULL,
-         y = NULL)
+       x = NULL,
+       y = NULL) +
+    scale_fill_viridis_d() +
+  theme(axis.text.x = element_text(size = 10),
+        panel.spacing = unit(0.6, "lines"),
+        plot.title = element_text(size = 12, face = "bold"),
+        plot.subtitle = element_text(size = 11),
+        axis.text.y = element_blank(),
+        axis.ticks = element_blank(),
+        legend.title = element_text(size = 8),
+        legend.text = element_text(size = 8),
+        panel.grid = element_blank(),
+        panel.background = element_rect(fill = "white"),
+        panel.border = element_blank(),
+        plot.background = element_rect(fill = "white"),
+        legend.position = "right",
+        legend.box = "vertical",
+        legend.key.size = unit(1, "cm"),
+        legend.box.margin = margin(l = 10),
+        axis.title.x = element_blank())
 
 path = file.path(folder, 'figures', 'country_sankey.png')
 ggsave(path, sankey_plot, width = 8, height = 8, units = "in")

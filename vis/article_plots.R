@@ -218,7 +218,7 @@ spatial_tots <-
      position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
   scale_fill_brewer(palette = "Paired") +
   labs(colour = NULL, title = "(e) Spatial Focus of Papers.",
-       subtitle = "Results broken by case-study country's continent group.",
+       subtitle = "Results broken down by continent.",
        x = NULL, y = bquote("Number of Reviewed Papers")) + 
   theme(
     legend.position = 'bottom',
