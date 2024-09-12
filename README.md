@@ -35,3 +35,13 @@ number of research on relationship between broadband and SDGs was recorded.
 <p align="center">
   <img src="/docs/author_maps.png" />
 </p>
+
+## Team
+- Bonface Osoro, George Mason University (Model development).
+- Edward Oughton, George Mason University (Project lead and corresponding 
+author).
+
+Acknowledgement
+---------------
+EO would like to thank Geography and Geoinformation Sciences at George Mason 
+University for providing funding for the project. 
