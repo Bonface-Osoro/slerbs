@@ -26,7 +26,7 @@ publisher_tots <-
   geom_text(data = label_totals, aes(x = publisher, y = total_value, 
       label = sprintf("%.0f", total_value)), size = 3,
       position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
-  scale_fill_brewer(palette = "Paired") +
+  scale_fill_viridis_d(direction = 1) +
   labs(colour = NULL, title = "(a) Papers by Publisher.",
        subtitle = "Results broken down by continent.",
        x = NULL, y = " ") + 
@@ -73,7 +73,7 @@ sdg_tots <-
   geom_text(data = label_totals, aes(x = SDG, y = total_value, 
       label = sprintf("%.0f", total_value)), size = 3,
       position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
-  scale_fill_brewer(palette = "Paired") +
+  scale_fill_viridis_d(direction = 1) +
   labs(colour = NULL, title = "(b) Papers by SDG Addressed.",
        subtitle = "Results broken down by case-study country's income group.",
        x = NULL, y = bquote("Number of Reviewed Papers")) + 
@@ -123,8 +123,8 @@ apps_tots <-
   geom_text(data = label_totals, aes(x = Application, y = total_value, 
                                      label = sprintf("%.0f", total_value)), size = 3,
             position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
-  scale_fill_brewer(palette = "Paired") +
-  labs(colour = NULL, title = "(b) Papers by Application Areas.",
+  scale_fill_viridis_d(direction = 1) +
+  labs(colour = NULL, title = "(c) Papers by Application Areas.",
        subtitle = "Results broken down by case-study country's income group.",
        x = NULL, y = bquote("Number of Reviewed Papers")) + 
   theme(
@@ -170,8 +170,8 @@ method_tots <-
   geom_text(data = label_totals, aes(x = Methodology, y = total_value, 
        label = sprintf("%.0f", total_value)), size = 3,
        position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
-  scale_fill_brewer(palette = "Paired") +
-  labs(colour = NULL, title = "(d) Methodology used in the Papers.",
+  scale_fill_viridis_d(direction = 1) +
+  labs(colour = NULL, title = "(e) Methodology used in the Papers.",
        subtitle = "Results broken down by availability of open source code.",
        x = NULL, y = bquote("Number of Reviewed Papers")) + 
   theme(
@@ -216,8 +216,8 @@ spatial_tots <-
   geom_text(data = label_totals, aes(x = spatial_focus, y = total_value, 
      label = sprintf("%.0f", total_value)), size = 3,
      position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
-  scale_fill_brewer(palette = "Paired") +
-  labs(colour = NULL, title = "(e) Spatial Focus of Papers.",
+  scale_fill_viridis_d(direction = 1) +
+  labs(colour = NULL, title = "(f) Spatial Focus of Papers.",
        subtitle = "Results broken down by continent.",
        x = NULL, y = bquote("Number of Reviewed Papers")) + 
   theme(
@@ -262,8 +262,8 @@ technology_tots <-
   geom_text(data = label_totals, aes(x = technology, y = total_value, 
      label = sprintf("%.0f", total_value)), size = 3,
      position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
-  scale_fill_brewer(palette = "Paired") +
-  labs(colour = NULL, title = "(f) Key Technology Focus of Papers.",
+  scale_fill_viridis_d(direction = 1) +
+  labs(colour = NULL, title = "(d) Key Technology Focus of Papers.",
        subtitle = "Results broken by taraget users.",
        x = NULL, y = bquote("Number of Reviewed Papers")) + 
   theme(
@@ -286,8 +286,8 @@ technology_tots <-
 ## PANEL ARTICLE ##
 ###################
 aggregate_paper <- ggarrange(publisher_tots, sdg_tots, 
-                             apps_tots, method_tots,
-                             spatial_tots, technology_tots,
+                             apps_tots, technology_tots, method_tots,
+                             spatial_tots,
   ncol = 2, nrow = 3, align = c('hv'),
   common.legend = FALSE, legend='bottom') 
 
