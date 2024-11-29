@@ -44,7 +44,7 @@ publisher_tots <-
   ) + expand_limits(y = 0) +
   guides(fill = guide_legend(ncol = 3, title = 'Continent')) +
   scale_x_discrete(expand = c(0, 0.15)) + scale_y_continuous(expand = c(0, 0),
-  labels = function(y)format(y, scientific = FALSE), limit = c(0, 60))
+  labels = function(y)format(y, scientific = FALSE), limit = c(0, 139))
 
 ######################
 ## ARTICLES BY SDG ###
@@ -91,7 +91,7 @@ sdg_tots <-
   ) + expand_limits(y = 0) +
   guides(fill = guide_legend(ncol = 6, title = 'Income Group')) +
   scale_x_discrete(expand = c(0, 0.15)) + scale_y_continuous(expand = c(0, 0),
-  labels = function(y)format(y, scientific = FALSE), limit = c(0, 45))
+  labels = function(y)format(y, scientific = FALSE), limit = c(0, 79))
 
 
 ###################################
@@ -102,11 +102,11 @@ df = data %>%
   summarize(total_apps = sum(number)) 
 
 df$Application <- factor(df$Application,
-   levels = c('Agriculture', 'Healthcare', 'Education', 'Technology', 
-              'General Information', 'Equality', 'Energy', 'Emissions', 
+   levels = c('Agriculture', 'Healthcare', 'Education', 'General Information', 
+              'Technology', 'Energy', 'Emissions', 'Equality', 
               'Business & Economy'),
-   labels = c('Agriculture', 'Healthcare', 'Education', 'Technology', 
-              'General \nInformation', 'Equality', 'Energy', 'Emissions', 
+   labels = c('Agriculture', 'Healthcare', 'Education', 'General \nInformation', 
+              'Technology', 'Energy', 'Emissions','Equality',  
               'Business \n& Economy'))
 
 df$income <- factor(df$income,
@@ -172,7 +172,7 @@ method_tots <-
        position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
   scale_fill_viridis_d(direction = 1) +
   labs(colour = NULL, title = "(e) Methodology used in the Papers.",
-       subtitle = "Results broken down by availability of open source code.",
+       subtitle = "Results broken down by availability of open-source code.",
        x = NULL, y = bquote("Number of Reviewed Papers")) + 
   theme(
     legend.position = 'bottom',
@@ -186,9 +186,9 @@ method_tots <-
     legend.text = element_text(size = 8),
     axis.title.x = element_text(size = 7)
   ) + expand_limits(y = 0) +
-  guides(fill = guide_legend(ncol = 6, title = 'Open-Source Code Available?')) +
+  guides(fill = guide_legend(ncol = 6, title = 'Open-source code available?')) +
   scale_x_discrete(expand = c(0, 0.15)) + scale_y_continuous(expand = c(0, 0),
-  labels = function(y)format(y, scientific = FALSE), limit = c(0, 49))
+  labels = function(y)format(y, scientific = FALSE), limit = c(0, 84))
 
 
 ################################
@@ -234,7 +234,7 @@ spatial_tots <-
   ) + expand_limits(y = 0) +
   guides(fill = guide_legend(ncol = 3, title = 'Continent')) +
   scale_x_discrete(expand = c(0, 0.15)) + scale_y_continuous(expand = c(0, 0),
-  labels = function(y)format(y, scientific = FALSE), limit = c(0, 74))
+  labels = function(y)format(y, scientific = FALSE), limit = c(0, 104))
 
 
 ################################
@@ -264,7 +264,7 @@ technology_tots <-
      position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
   scale_fill_viridis_d(direction = 1) +
   labs(colour = NULL, title = "(d) Key Technology Focus of Papers.",
-       subtitle = "Results broken by taraget users.",
+       subtitle = "Results broken by target users.",
        x = NULL, y = bquote("Number of Reviewed Papers")) + 
   theme(
     legend.position = 'bottom',
@@ -280,7 +280,7 @@ technology_tots <-
   ) + expand_limits(y = 0) +
   guides(fill = guide_legend(ncol = 6, title = 'Target Users')) +
   scale_x_discrete(expand = c(0, 0.15)) + scale_y_continuous(expand = c(0, 0),
-  labels = function(y)format(y, scientific = FALSE), limit = c(0, 45))
+  labels = function(y)format(y, scientific = FALSE), limit = c(0, 80))
 
 ###################
 ## PANEL ARTICLE ##

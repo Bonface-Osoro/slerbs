@@ -1,0 +1,188 @@
+﻿Author (s),year,Reference,income,technology,spatial_focus,SDG,Methodology,Title
+,2022,,None,All,Not Applicable,All,Literature Review,A Tertiary Review on Blockchain and Sustainability With Focus on Sustainable Development Goals
+,2018,,None,All,Not Applicable,All,Literature Review,"Information and Communications Technologies for Sustainable Development Goals: State-of-the-Art, Needs and Perspectives"
+,2024,,UMC,All,Not Applicable,All,Experiment & Survey,Supporting the Measurement of Sustainable Development Goals in Africa: Geospatial Sentiment Data Analysis
+,2024,,LMC,All,Not Applicable,SDG 4,Optimization & AI,"Exploring the Connectivity Between Education 4.0 and Classroom 4.0: Technologies, Student Perspectives, and Engagement in the Digital Era"
+,2021,,HIC,All,Urban,SDG 4,Experiment & Survey,Analyzing the Users’ Acceptance of an IoT Cloud Platform Using the UTAUT/TAM Model
+,2021,,LMC,All,Rural,SDG 2,Literature Review,Agriculture 4.0: An Implementation Framework for Food Security Attainment in Nigeria’s Post-Covid-19 Era
+,2022,,UMC,Wired,Rural,Not Mentioned,Experiment & Survey,Broadband usage for rural communities in the North Island of Aotearoa New Zealand
+,2021,,UMC,All,Remote,SDG 8,Empirical,A Techno-Economic Framework for Installing Broadband Networks in Rural and Remote Areas
+,2013,,HIC,Wired,Urban,SDG 8,Empirical,Fourth generation broadband delivered by hybrid FttH solution - A techno-economic study
+,2021,,HIC,Fixed Wireless,Remote,SDG 8,Experiment & Survey,TV White Space Based Wireless Broadband Internet Connectivity: A Case Study With Implementation Details and Performance Analysis
+,2022,,HIC,Mobile,Rural,SDG 9,Experiment & Survey,A Systems Approach for Solving Inter-Policy Gaps in Dynamic Spectrum Access-Based Wireless Rural Broadband Networks
+,2010,,HIC,All,All,SDG 13,Literature Review,Energy Efficiency in the Future Internet: A Survey of Existing Approaches and Trends in Energy-Aware Fixed Network Infrastructures
+,2021,,HIC,Mobile,All,SDG 13,Literature Review,"5G Networks Towards Smart and Sustainable Cities: A Review of Recent Developments, Applications and Future Perspectives"
+,2014,,HIC,All,All,SDG 9,Literature Review,Dependable Fiber-Wireless (FiWi) Access Networks and Their Role in a Sustainable Third Industrial Revolution Economy
+,2022,,HIC,Satellite,All,SDG 9,Literature Review,"A Survey on UAV-Aided Maritime Communications: Deployment Considerations, Applications, and Future Challenges"
+,2016,,UMC,All,All,SDG 13,Optimization & AI,Real-Time Energy Management for Cloud Data Centers in Smart Microgrids
+,2014,,HIC,Mobile,All,Not Mentioned,Statistical,Energy-Efficient Power Allocation for Delay-Sensitive Multimedia Traffic Over Wireless Systems
+,2017,,HIC,Mobile,All,SDG 13,Literature Review,Softwarization and Optimization for Sustainable Future Mobile Networks: A Survey
+,2013,,UMC,Mobile,All,Not Mentioned,Optimization & AI,Coordinated Multicell Multiuser Precoding for Maximizing Weighted Sum Energy Efficiency
+,2020,,HIC,Wired,All,Not Mentioned,Optimization & AI,Energy-Efficient Decentralized Framework for the Integration of Fog With Optical Access Networks
+,2022,,HIC,Mobile,All,Not Mentioned,Optimization & AI,An Energy and Carbon Footprint Analysis of Distributed and Federated Learning
+,2023,,LMC,Mobile,Urban,SDG 13,Optimization & AI,Emission-Aware Sustainable Energy Provision for 5G and B5G Mobile Networks
+,2017,,LMC,Mobile,All,Not Mentioned,Optimization & AI,Green Communication in Next Generation Cellular Networks: A Survey
+,2023,,HIC,Mobile,All,SDG 13,Optimization & AI,On the Economic Viability of Solar Energy When Upgrading Cellular Networks
+,2016,,HIC,Mobile,All,SDG 13,Optimization & AI,On Green Cognitive Radio Cellular Networks: Dynamic Spectrum and Operation Management
+,2018,,Global,Mobile,All,SDG 8,Statistical,How important are mobile broadband networks for the global economic development?
+,2024,,UMC,Wired,Rural,SDG 8,Empirical,Broadband acceleration and employment: Evidence from China
+,2023,,HIC,Wired,Urban,Not Mentioned,Experiment & Survey,Assessing the benefits of high-speed broadband: Lessons from Australia's National Broadband Network (NBN)
+,2024,,UMC,Wired,Urban,SDG 10,Empirical,Can broadband infrastructure construction promote equality of opportunity? Evidence from a quasi-natural experiment in China
+,2024,,UMC,All,Urban,SDG 13,Empirical,How the digital infrastructure construction affects urban carbon emissions—A quasi-natural experiment from the “Broadband China” policy
+,2024,,HIC,Wired,Urban,SDG 10,Empirical,Broadband internet and attitudes toward migrants: Evidence from Spain
+,2023,,Global,All,All,SDG 9,Empirical,What would it cost to connect the unconnected? Estimating global universal broadband infrastructure investment
+,2024,,UMC,Wired,Urban,SDG 9,Empirical,Does broadband infrastructure promote urban innovation? Evidence from “Broadband China” demonstration policy
+,2021,,HIC,Wired,All,SDG 9,Empirical,Broadband and economic growth in China: An empirical study during the COVID-19 pandemic period
+,2024,,UMC,All,Urban,SDG 13,Empirical,The impact of digital infrastructure on industrial ecology: Evidence from broadband China strategy
+,2021,,UMC,Wired,Rural,SDG 9,Empirical,Broadband Infrastructure and Economic Growth in Rural Areas
+,2024,,UMC,Wired,Urban,SDG 9,Empirical,Employee allocation efficiency in the context of the digital economy: Evidence from “Broadband China” demonstration cities
+,2024,,UMC,All,Urban,Not Mentioned,Empirical,Does network infrastructure construction reduce urban–rural income inequality? Based on the “Broadband China” policy
+,2023,,HIC,Wired,Urban,SDG 9,Empirical,Ultra-broadband investment and economic resilience: Evidence from the Covid-19 pandemic
+,2022,,Global,Mobile,All,SDG 9,Empirical,The economic impact of mobile broadband speed
+,2024,,UMC,All,All,SDG 13,Empirical,The carbon emission reduction effect of digital infrastructure development: Evidence from the broadband China policy
+,2024,,Global,Wired,All,Not Mentioned,Literature Review,Socioeconomic benefits of high-speed broadband availability and service adoption: A survey
+,2024,,UMC,Wired,Urban,SDG 13,Empirical,Broadband infrastructure and urban carbon emissions: Quasi-experimental evidence from China
+,2023,,HIC,All,All,Not Mentioned,Empirical,Economic growth and broadband access: The European urban-rural digital divide
+,2024,,HIC,Wired,Rural,Not Mentioned,Empirical,"Broadband, rural contexts and local economic dynamics"
+,2023,,Global,All,All,Not Mentioned,Empirical,Digitalization and CO2 emissions: Dynamics under R&D and technology innovation regimes
+,2024,,Global,Mobile,All,Not Mentioned,Statistical,Life cycle assessment of a telematics box with ICT impact allocation and quantification – Application to precision agriculture technology and robotics
+,2020,,Global,All,All,SDG 13,Literature Review,"Energy efficient transmission trends towards future green cognitive radio networks (5G): Progress, taxonomy and open challenges"
+,2017,,Global,Mobile,All,SDG 13,Literature Review,A survey on green communication and security challenges in 5G wireless communication networks
+,2020,,HIC,Wired,All,Not Mentioned,Statistical,A Green Converged TWDM-PON and 5G HetNet Catering Applications Demanding Low Latency
+,2022,,Global,Mobile,All,SDG 13,Optimization & AI,Optimization and techno-economic analysis of a mixed power system for sustainable operation of cellular sites in 5G era
+,2021,,Global,All,All,SDG 13,Experiment & Survey,A comprehensive survey on Green ICT with 5G-NB-IoT: Towards sustainable planet
+,2022,,Global,Mobile,All,Not Mentioned,Optimization & AI,A review on 5G technology for smart energy management and smart buildings in Singapore
+,2023,,UMC,All,Urban,SDG 13,Empirical,Breaking the resource curse: The perspective of improving carbon emission efficiency based on digital infrastructure construction
+,2022,,HIC,Mobile,All,SDG 9,Literature Review,"The energy use implications of 5G: Reviewing whole network operational energy, embodied energy, and indirect effects"
+,2022,,UMC,Mobile,All,SDG 9,Statistical,Comprehensive evaluation of 5G+ smart distribution network based on combined weighting method-cloud model
+,2024,,HIC,Mobile,All,Not Mentioned,Optimization & AI,Integration of Renewable Energy Sources into 5G Networks and Beyond
+,2023,,HIC,Mobile,All,Not Mentioned,Literature Review,Koomey's law forevermore? A document analysis of the production and circulation of the promise of ‘green 5G’
+,2022,,HIC,Mobile,All,SDG 13,Optimization & AI,5G network deployment and the associated energy consumption in the UK: A complex systems’ exploration
+,2024,,LMC,Mobile,All,Not Mentioned,Experiment & Survey,Latency optimized C-RAN in optical backhaul and RF fronthaul architecture for beyond 5G network: A comprehensive survey
+,2022,,UMC,Mobile,All,SDG 13,Statistical,Powering green digitalization: Evidence from 5G network infrastructure in China
+,2024,,HIC,All,All,SDG 13,Empirical,Carbon footprint and employment generation produced by ICT networks for Internet deployment: A multi-regional input-output analysis
+,2023,,UMC,Satellite,All,SDG 9,Experiment & Survey,Starlink satellite project impact on the Internet provider service in emerging economies
+,2023,,HIC,All,Rural,SDG 9,Experiment & Survey,Evaluating the impact of broadband access and internet use in a small underserved rural community
+,2020,,HIC,Satellite,Rural,SDG 9,Statistical,Techno-economic viability of integrating satellite communication in 4G networks to bridge the broadband digital divide
+,1997,,HIC,Satellite,Rural,SDG 9,Statistical,Providing global broadband Internet access using low-earth-orbit satellites
+,2009,,HIC,Satellite,Rural,SDG 9,Empirical,Internet access for everybody: The satellite solution
+,2021,,HIC,Satellite,Rural,SDG 9,Optimization & AI,Connecting the other half: Exploring options for the 50% of the population unconnected to the internet
+,2024,,HIC,Satellite,Rural,SDG 9,Empirical,Equitable access to satellite broadband services: Challenges and opportunities for developing countries
+,2023,,Global,All,All,SDG 9,Empirical,"Digital financial inclusion, environmental quality, and economic development: the contributions of financial development and investments in OECD countries"
+,2024,,HIC,Wired,Rural,SDG 10,Statistical,Variation in Broadband Access Among Undergraduate Populations Across the United States
+,2024,,UMC,All,Rural,SDG 10,Statistical,Study on the measurement of coupling and coordinated development level between China’s internet and elderly care services and its influencing factors
+,2023,,Global,All,All,SDG 13,Statistical,Impact of Internet development on carbon emission efficiency under carbon neutral target: evidence from global 58 economies
+,2024,,HIC,All,Rural,SDG 10,Empirical,Broadband access and knowledge spillover influence on SBIR phase II awards in non-metropolitan regions
+,2023,,HIC,All,Rural,SDG 3,Empirical,Quantifying the Digital Divide: Associations of Broadband Internet with Tele-mental Health Access Before and During the COVID-19 Pandemic
+,2023,,UMC,Wired,Urban,Not Mentioned,Empirical,High-speed rail construction and urban innovation disparity in China: the role of internet development
+,2023,,UMC,All,Urban,Not Mentioned,Empirical,"Inclusivity between internet development and energy conservation in Henan, China"
+,2024,,UMC,Wired,Urban,Not Mentioned,Literature Review,How does internet development affect urban eco-resilience: evidence from China
+,2023,,UMC,All,Urban,Not Mentioned,Literature Review,The impact of internet development on China's energy intensity and its mechanism analysis
+,2023,,UMC,All,All,SDG 13,Empirical,Fostering sustainability: unveiling the impact of Internet development on carbon emissions in China
+,2023,,LMC,All,All,SDG 9,Empirical,Do Information and Communications Technology (ICT) and financial development contribute to economic diversification? Evidence from sub-Saharan Africa
+,2024,,HIC,All,All,SDG 3,Empirical,The digital divide in access to broadband internet and mental healthcare
+,2023,,HIC,Mobile,All,SDG 9,Empirical,The Impact of Mobile Broadband and Internet Bandwidth on Human Development—A Comparative Analysis of Developing and Developed Countries
+,2017,,LMC,Mobile,All,Not Mentioned,Optimization & AI,A compendium of optimization techniques for green radio resource management
+,2024,,LMC,Mobile,All,Not Mentioned,Literature Review,Content caching in mobile edge computing: a survey
+,2023,,LMC,Mobile,All,Not Mentioned,Literature Review,Performance evaluation and downstream system planning based energy management in LTE systems
+,2022,,HIC,All,All,SDG 13,Literature Review,How ICT can contribute to realize a sustainable society in the future: a CGE approach
+,2023,,LMC,Fixed Wireless,All,Not Mentioned,Literature Review,Air pollution forecasting based on wireless communications: review
+,2021,,UMC,All,All,Not Mentioned,Statistical,The role of information and communication technologies in mitigating carbon emissions: evidence from panel quantile regression
+,2023,,LMC,Mobile,All,Not Mentioned,Literature Review,Efficient Crest Factor Reduction Techniques for 5G NR: A Review and a Case Study
+,2023,,Global,All,All,SDG 9,Literature Review,How do information and communication technology and urbanization affect carbon emissions? Evidence from 42 selected “Belt and Road Initiative” countries
+,2022,,HIC,Mobile,All,Not Mentioned,Experiment & Survey,Evaluation and projection of 4G and 5G RAN energy footprints: the case of Belgium for 2020–2025
+,2010,,HIC,Wired,Rural,SDG 9,Empirical,Infrastructure Investment and Rural Economic Development: An Evaluation of USDA's Broadband Loan Program
+,2019,,Global,Wired,All,SDG 9,Statistical,Go for Gigabit? First Evidence on Economic Benefits of High-speed Broadband Technologies in Europe*
+,2017,,UMC,All,All,SDG 9,Statistical,Determinants for South African SMEs to Adopt Broadband Internet Technologies
+,2023,,HIC,Wired,All,Not Mentioned,Empirical,The economic impact of broadband access for small firms
+,2019,,HIC,Wired,Rural,SDG 10,Statistical,Does access to internet promote innovation? A look at the U.S. broadband industry
+,2019,,HIC,Wired,Remote,Not Mentioned,Statistical,Broadband's relationship to rural housing values
+,2016,,HIC,Wired,Rural,Not Mentioned,Empirical,Broadband Internet and New Firm Location Decisions in Rural Areas
+,2019,,HIC,All,All,Not Mentioned,Experiment & Survey,Voter mobilisation in the echo chamber: Broadband internet and the rise of populism in Europe
+,2022,,HIC,All,All,SDG 3,Empirical,The effect of broadband Internet on the gender gap in mental health: Evidence from Germany
+,2020,,HIC,All,Rural,SDG 10,Empirical,Impact of Internet use on economic well-being of rural households: Evidence from China
+,2006,,HIC,Wired,Rural,SDG 9,Empirical,BROADBAND AND ECONOMIC DEVELOPMENT: A MUNICIPAL CASE STUDY FROM FLORIDA
+,2023,,HIC,Wired,All,SDG 9,Experiment & Survey,Does broadband affect local economic outcomes less than we thought? Micro evidence from Louisiana
+,2023,,LMC,Fixed Wireless,All,Not Mentioned,Experiment & Survey,A Wideband Highly Efficient Omnidirectional Compact Antenna for WiMAX/Lower 5G Communications
+,2019,,LMC,Mobile,All,SDG 9,Literature Review,Power-saving policies for annual energy cost savings in green computing
+,2020,,HIC,Mobile,Urban,SDG 9,Experiment & Survey,The importance of spatio-temporal infrastructure assessment: Evidence for 5G from the Oxford–Cambridge Arc
+,2023,,LMC,Mobile,Urban,Not Mentioned,Optimization & AI,Reliable and cost-efficient protection scheme for 5G fronthaul/backhaul network
+,2019,,HIC,Mobile,Urban,Not Mentioned,Empirical,"Assessing the capacity, coverage and cost of 5G infrastructure strategies: Analysis of the Netherlands"
+,2019,,HIC,Mobile,Urban,Not Mentioned,Empirical,A business case for 5G mobile broadband in a dense urban area
+,2023,,LMC,Mobile,All,Not Mentioned,Experiment & Survey,Adoption of 5G in developing economies: A supply side perspective from India
+,2023,,Global,Mobile,All,SDG 10,Empirical,Policy options for broadband infrastructure strategies: A simulation model for affordable universal broadband in Africa
+,2022,,Global,Mobile,All,SDG 10,Empirical,Policy choices can help keep 4G and 5G universal broadband affordable
+,2024,,UMC,Mobile,Urban,SDG 13,Optimization & AI,Distribution network restoration supply method considers 5G base station energy storage participation
+,2024,,UMC,Mobile,All,Not Mentioned,Experiment & Survey,Experimental investigation on the heat transfer performance of a microchannel thermosiphon array for 5G telecommunication base stations
+,2024,,UMC,Mobile,Urban,Not Mentioned,Empirical,Modeling and aggregated control of large-scale 5G base stations and backup energy storage systems towards secondary frequency support
+,2018,,LMC,Mobile,All,Not Mentioned,Literature Review,Resource management in cellular base stations powered by renewable energy sources
+,2023,,Global,All,All,SDG 13,Empirical,Promoting decarbonization in the power sector: How important is digital transformation?
+,2023,,Global,Mobile,Urban,Not Mentioned,Optimization & AI,Synergetic renewable generation allocation and 5G base station placement for decarbonizing development of power distribution system: A multi-objective interval evolutionary optimization approach
+,2023,,UMC,All,Urban,SDG 10,Empirical,Seeing green: How does digital infrastructure affect carbon emission intensity?
+,2021,,HIC,All,All,SDG 10,Literature Review,Reforming funding of universal access to telecommunications and broadband services: Approaches for the new decade
+,2024,,LMC,Mobile,All,SDG 13,Empirical,Assessing the carbon footprint of telecommunication towers in India: Effect of 4G to 5G transition and solar photovoltaics based hybrid power systems
+,2022,,UMC,All,Urban,Not Mentioned,Empirical,The impact of digital technology development on carbon emissions: A spatial effect analysis for China
+,2021,,LMC,Wired,All,SDG 10,Empirical,International connectivity and the digital divide in Sub-Saharan Africa
+,2023,,UMC,Mobile,Urban,SDG 13,Empirical,The carbon footprint response to projected base stations of China's 5G mobile network
+,2022,,HIC,Mobile,Urban,SDG 13,Empirical,Life cycle inventory and carbon footprint assessment of wireless ICT networks for six demographic areas
+,2023,,UMC,All,Urban,SDG 13,Empirical,Does digital infrastructure cut carbon emissions in Chinese cities?
+,2021,,UMC,Mobile,All,SDG 9,Literature Review,"Renewable energy powered sustainable 5G network infrastructure: Opportunities, challenges and perspectives"
+,2020,,HIC,Wired,Urban,SDG 9,Literature Review,Are mobile and fixed broadband substitutes or complements? New empirical evidence from Italy and implications for the digital divide policies
+,2021,,HIC,All,Rural,SDG 10,Empirical,The digital lottery: The impact of next generation broadband on rural small and micro businesses in the North East of Scotland
+,2023,,HIC,All,Rural,SDG 10,Empirical,High-speed internet access and energy poverty
+,2015,,HIC,Satellite,All,SDG 9,Optimization & AI,Earth Orbiting Support Systems for commercial low Earth orbit data relay: Assessing architectures through tradespace exploration
+,2023,,UMC,All,Urban,SDG 9,Empirical,The heterogeneous role of broadband access on establishment entry and exit by sector and urban and rural markets
+,2024,,HIC,All,All,Not Mentioned,Literature Review,The infrastructural conditions of (de-)growth: The case of the internet
+,2023,,UMC,Satellite,Rural,Not Mentioned,Experiment & Survey,Robust or nonrobust: On MC-DS-CDMA acquisition in LEO satellite communications
+,2022,,HIC,Satellite,All,Not Mentioned,Literature Review,"Satellite-based communications security: A survey of threats, solutions, and research challenges"
+,2023,,HIC,Satellite,Rural,Not Mentioned,Empirical,Satellite internet technology implementation for the practice of medicine and surgery
+,2022,,HIC,All,All,SDG 9,Statistical,Broadband adoption and availability: Impacts on rural employment during COVID-19
+,2023,,UMC,Satellite,Rural,SDG 10,Literature Review,Factors influencing the effects of the Starlink Satellite Project on the internet service provider market in Thailand
+,2022,,UMC,Satellite,All,Not Mentioned,Optimization & AI,Scalable routing in low-Earth orbit satellite constellations: Architecture and algorithms
+,2018,,HIC,All,All,SDG 9,Literature Review,The involvement of utilities in the development of broadband infrastructure: A comparison of EU case studies
+,2021,,HIC,Mobile,Urban,Not Mentioned,Literature Review,Importance of Internet Exchange Point (IXP) infrastructure for 5G: Estimating the impact of 5G use cases
+,2022,,HIC,Satellite,All,Not Mentioned,Literature Review,Satellite constellations: International legal and technical aspects
+,2020,,HIC,Satellite,All,Not Mentioned,Empirical,Environmental sustainability of large satellite constellations in low earth orbit
+,2020,,HIC,Mobile,Remote,SDG 10,Empirical,Small rural operators techno-economic analysis to bring mobile services to isolated communities: The case of Peru Amazon rainforest
+,2020,,UMC,Mobile,Rural,Not Mentioned,Experiment & Survey,Two scenarios for 5G deployment in Indonesia
+,2024,,UMC,Satellite,All,Not Mentioned,Experiment & Survey,Analysis and Design of Starlink-like Satellite Constellation
+,2022,,LMC,All,Urban,Not Mentioned,Empirical,"Pandemic management, citizens and the Indian Smart cities: Reflections from the right to the smart city and the digital divide"
+,2021,,HIC,Wired,Rural,SDG 10,Empirical,Fibre to the countryside: A comparison of public and community initiatives tackling the rural digital divide in the UK
+,2023,,HIC,Satellite,All,Not Mentioned,Optimization & AI,Optimal deployment of satellite mega-constellation
+,2022,,HIC,Mobile,Urban,Not Mentioned,Literature Review,Regulation and innovation in 5G markets
+,2015,,UMC,Satellite,All,Not Mentioned,Optimization & AI,A Weighted Semi-Distributed Routing Algorithm for LEO satellite networks
+,2017,,UMC,Mobile,All,Not Mentioned,Optimization & AI,Estimating the medium access probability in large cognitive radio networks
+,2020,,HIC,All,Rural,SDG 10,Experiment & Survey,Determinants of broadband access and affordability: An analysis of a community survey on the digital divide
+,2022,,HIC,Satellite,Rural,Not Mentioned,Optimization & AI,Design and analysis of flexible multi-layer staged deployment for satellite mega-constellations under demand uncertainty
+,2020,,HIC,Mobile,All,Not Mentioned,Literature Review,Forming a 5G strategy for developing countries: A note for policy makers
+,2021,,UMC,All,Rural,SDG 10,Empirical,Internet access and poverty reduction: Evidence from rural and urban Mexico
+,2019,,LMC,Mobile,Rural,SDG 9,Empirical,Techno-commercial feasibility analysis of 4G mobile services in India
+,2023,,HIC,Satellite,All,Not Mentioned,Optimization & AI,Optimal bandwidth and computing resource allocation in low earth orbit satellite constellation for earth observation applications
+,2020,,UMC,Mobile,All,Not Mentioned,Literature Review,A survey on space-aerial-terrestrial integrated 5G networks
+,2021,,HIC,All,Rural,Not Mentioned,Empirical,"How variation in internet access, digital skills, and media use are related to rural student outcomes: GPA, SAT, and educational aspirations"
+,2023,,UMC,All,Rural,SDG 10,Empirical,Difference in the influence of internet use on the relative poverty among farmers with different income structures
+,2021,,HIC,All,Rural,SDG 10,Empirical,"Rural broadband: Gaps, maps and challenges"
+,2023,,HIC,Satellite,All,Not Mentioned,Optimization & AI,Demand Island Routing for LEO satellite constellations
+,2022,,HIC,All,Rural,SDG 10,Empirical,Restricted access: How the internet can be used to promote reading and learning
+,2022,,HIC,Satellite,All,Not Mentioned,Optimization & AI,LEO satellite beam management algorithms
+,2023,,Global,All,All,SDG 13,Empirical,Assessing embodied carbon emissions of communication user devices by combining approaches
+,2020,,UMC,All,Rural,SDG 10,Experiment & Survey,Internet adoption and usage patterns in rural Mexico
+,2020,,HIC,All,All,SDG 10,Empirical,The social structuring of the digital gap in a developing country. The impact of computer and internet access opportunities on internet use in Thailand
+,2021,,UMC,All,All,SDG 10,Empirical,"Law, mobile money drivers and mobile money innovations in developing countries"
+,2021,,Global,All,All,SDG 10,Empirical,Do educational inequalities affect Internet use? An analysis for developed and developing countries
+,2020,,HIC,All,Rural,SDG 10,Empirical,Smart rural futures: Will rural areas be left behind in the 4th industrial revolution?
+,2023,,HIC,All,All,SDG 10,Empirical,Mobile money as a driver of digital financial inclusion
+,2021,,HIC,All,All,SDG 13,Empirical,"The real climate and transformative impact of ICT: A critique of estimates, trends, and regulations"
+,2023,,LMC,All,All,SDG 9,Empirical,Leveraging digital technology for development: Does ICT contribute to poverty reduction?
+,2024,,Global,All,All,Not Mentioned,Empirical,An open-access market for global communications
+,2021,,LMC,All,Rural,SDG 10,Experiment & Survey,Explaining caste-based digital divide in India
+,2022,,HIC,All,Rural,SDG 10,Experiment & Survey,Push them forward: Challenges in intergovernmental organizations' influence on rural broadband infrastructure expansion
+,2023,,Global,Satellite,All,Not Mentioned,Literature Review,Software defined intelligent satellite-terrestrial integrated networks: Insights and challenges
+,2016,,Global,Satellite,All,Not Mentioned,Literature Review,Current barriers and factors of success in the diffusion of satellite services in Europe
+,2020,,HIC,All,Rural,SDG 10,Empirical,State broadband policy: Impacts on availability
+,2024,,HIC,All,Rural,SDG 10,Experiment & Survey,Consumer-driven design and evaluation of broadband labels
+,2024,,UMC,Satellite,Rural,Not Mentioned,Literature Review,"Integration of 5G, 6G and IoT with Low Earth Orbit (LEO) networks: Opportunity, challenges and future trends"
+,2022,,HIC,All,Remote,SDG 10,Empirical,The tribal digital divide: Extent and Explanations
+,2023,,HIC,All,Urban,Not Mentioned,Empirical,High-speed internet access and diffusion of new technologies in nonmetro areas
+,2018,,UMC,All,All,Not Mentioned,Optimization & AI,Estimating the number of users in TDMA networks based on redundancy of adaptive channel coding
+,2023,,LMC,Satellite,Rural,Not Mentioned,Literature Review,Starlink for ASEAN: A Changemaker in the Race Toward Sustainable Development?

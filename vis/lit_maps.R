@@ -37,8 +37,8 @@ world_data <- left_join(world_map, df, by = c("region" = "country"))
 world_data$total_count[is.na(world_data$total_count)] <- 0
 
 # # Define new custom breaks and labels
-breaks <- c(0, 1, 2, 3, 4, 5, 7, 10, 21, 25, Inf)
-labels <- c('0', '1', '2', '3', '4', '5', '7', '10', '21', '25')
+breaks <- c(0, 1, 2, 3, 5, 7, 10, 21, 25, 30, Inf)
+labels <- c('0', '1', '2', '3', '6', '7-9', '10-20', '21-24', '25-30', 'Over 30')
 
 world_data$total_count <- cut(world_data$total_count, breaks = breaks,
     labels = labels, include.lowest = TRUE, right = FALSE)
@@ -61,7 +61,8 @@ map_plot <-
     axis.text.y = element_text(size = 10),
     legend.title = element_text(size = 8),
     legend.text = element_text(size = 8),
-    axis.title.x = element_text(size = 10)
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank()
   ) +
   guides(fill = guide_legend(title = "Papers per Country", reverse = FALSE, nrow = 1))
 
@@ -107,7 +108,8 @@ usa_plot <-
         legend.box = "vertical",
         legend.key.size = unit(1, "cm"),
         legend.box.margin = margin(l = 10),
-        axis.title.x = element_text(size = 10)) +
+        axis.title.x = element_blank(),
+        axis.title.y = element_blank()) +
   geom_label_repel(data = usa_cities_to_label, aes(x = longitude, y = latitude,
         label = author_city, fill = author_city), color = "black",
         fontface = "bold", size = 3.5, box.padding = 1.0, point.padding = 0.3,
@@ -155,7 +157,8 @@ china_plot <-
     legend.box = "vertical",
     legend.key.size = unit(1, "cm"),
     legend.box.margin = margin(l = 10),
-    axis.title.x = element_text(size = 10)) +
+    axis.title.x = element_blank(),
+    axis.title.y = element_blank()) +
   geom_label_repel(data = cities_to_label, aes(x = longitude, y = latitude,
        label = author_city, fill = author_city), color = "black",
        fontface = "bold", size = 3.5, box.padding = 1.0, point.padding = 0.3,
