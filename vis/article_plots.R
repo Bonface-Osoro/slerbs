@@ -22,10 +22,10 @@ label_totals <- df %>%
 
 publisher_tots <-
   ggplot(df, aes(x = publisher, y = total_arts)) +
-  geom_bar(stat = "identity", aes(fill = continent)) + 
+  geom_bar(stat = "identity", aes(fill = continent), width = 0.7) + 
   geom_text(data = label_totals, aes(x = publisher, y = total_value, 
       label = sprintf("%.0f", total_value)), size = 3,
-      position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
+      position = position_dodge(0.9), vjust = -0.2, hjust = 0.5) +
   scale_fill_viridis_d(direction = 1) +
   labs(colour = NULL, title = "(a) Papers by Publisher.",
        subtitle = "Results broken down by continent.",
@@ -54,10 +54,10 @@ df = data %>%
   summarize(total_sdgs = sum(number)) 
 
 df$SDG <- factor(df$SDG,
-  levels = c('SDG 2', 'SDG 3', 'SDG 4', 'SDG 8', 'SDG 9', 'SDG 10', 'SDG 13',
-             'All', 'Not Mentioned'),
-  labels = c('SDG 2', 'SDG 3', 'SDG 4', 'SDG 8', 'SDG 9', 'SDG 10', 'SDG 13',
-             'All', 'Not \nMentioned'))
+  levels = c('SDG 2', 'SDG 4', 'All', 'SDG 3', 'SDG 8', 'SDG 13', 'SDG 10',
+             'SDG 9', 'Not Mentioned'),
+  labels = c('SDG 2', 'SDG 4', 'All', 'SDG 3', 'SDG 8', 'SDG 13', 'SDG 10',
+             'SDG 9', 'Not \nMentioned'))
 
 df$income <- factor(df$income,
    levels = c('LMC', 'UMC', 'HIC', 'Global', 'None'),
@@ -72,7 +72,7 @@ sdg_tots <-
   geom_bar(stat = "identity", aes(fill = income)) + coord_flip() + 
   geom_text(data = label_totals, aes(x = SDG, y = total_value, 
       label = sprintf("%.0f", total_value)), size = 3,
-      position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
+      position = position_dodge(0.9), vjust = 0.5, hjust = -0.1) +
   scale_fill_viridis_d(direction = 1) +
   labs(colour = NULL, title = "(b) Papers by SDG Addressed.",
        subtitle = "Results broken down by case-study country's income group.",
@@ -122,7 +122,7 @@ apps_tots <-
   geom_bar(stat = "identity", aes(fill = income)) + coord_flip() + 
   geom_text(data = label_totals, aes(x = Application, y = total_value, 
                                      label = sprintf("%.0f", total_value)), size = 3,
-            position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
+            position = position_dodge(0.9), vjust = 0.5, hjust = -0.1) +
   scale_fill_viridis_d(direction = 1) +
   labs(colour = NULL, title = "(c) Papers by Application Areas.",
        subtitle = "Results broken down by case-study country's income group.",
@@ -169,7 +169,7 @@ method_tots <-
   geom_bar(stat = "identity", aes(fill = open_code)) + coord_flip() + 
   geom_text(data = label_totals, aes(x = Methodology, y = total_value, 
        label = sprintf("%.0f", total_value)), size = 3,
-       position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
+       position = position_dodge(0.9), vjust = 0.5, hjust = -0.1) +
   scale_fill_viridis_d(direction = 1) +
   labs(colour = NULL, title = "(e) Methodology used in the Papers.",
        subtitle = "Results broken down by availability of open-source code.",
@@ -215,7 +215,7 @@ spatial_tots <-
   geom_bar(stat = "identity", aes(fill = continent)) + coord_flip() + 
   geom_text(data = label_totals, aes(x = spatial_focus, y = total_value, 
      label = sprintf("%.0f", total_value)), size = 3,
-     position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
+     position = position_dodge(0.9), vjust = 0.5, hjust = -0.1) +
   scale_fill_viridis_d(direction = 1) +
   labs(colour = NULL, title = "(f) Spatial Focus of Papers.",
        subtitle = "Results broken down by continent.",
@@ -245,12 +245,12 @@ df = data %>%
   summarize(total_tech = sum(number)) 
 
 df$technology <- factor(df$technology,
-   levels = c('Fixed Wireless', 'Satellite','Wired', 'Mobile', 'All'),
-   labels = c('Fixed \nWireless', 'Satellite','Wired', 'Mobile', 'All'))
+  levels = c('Wired', 'Mobile', 'Fixed Wireless', 'Satellite', 'All'),
+  labels = c('Wired', 'Mobile','Fixed \nWireless', 'Satellite', 'All'))
 
 df$spatial_focus <- factor(df$spatial_focus,
-   levels = c('Remote', 'Rural', 'Urban', 'Not Applicable', 'All'),
-   labels = c('Remote', 'Rural', 'Urban', 'Not \nApplicable', 'All'))
+   levels = c('Urban', 'Rural', 'Remote', 'All', 'Not Applicable'),
+   labels = c('Urban', 'Rural', 'Remote', 'All', 'Not \nApplicable'))
 
 label_totals <- df %>%
   group_by(technology) %>%
@@ -258,10 +258,10 @@ label_totals <- df %>%
 
 technology_tots <-
   ggplot(df, aes(x = technology, y = total_tech)) +
-  geom_bar(stat = "identity", aes(fill = spatial_focus)) + coord_flip() + 
+  geom_bar(stat = "identity", aes(fill = spatial_focus), width = 0.8) + coord_flip() + 
   geom_text(data = label_totals, aes(x = technology, y = total_value, 
      label = sprintf("%.0f", total_value)), size = 3,
-     position = position_dodge(0.9), vjust = 0.05, hjust = -0.1) +
+     position = position_dodge(0.9), vjust = 0.5, hjust = -0.1) +
   scale_fill_viridis_d(direction = 1) +
   labs(colour = NULL, title = "(d) Key Technology Focus of Papers.",
        subtitle = "Results broken by target users.",
