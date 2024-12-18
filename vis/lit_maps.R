@@ -94,13 +94,13 @@ usa_plot <-
   geom_point(data = df2, aes(x = longitude, y = latitude, size = total_city, 
             show.legend = FALSE), alpha = 0.7) +
   scale_size(range = c(3, 10), name = "Number of Publications") + 
-  labs(title = "(b) Number of authors per city in countries with over 20 authors.",
-       subtitle = "USA",
+  labs(title = "Number of authors per city in countries with over 20 authors.",
+       subtitle = "(b) USA",
        x = "Longitude", y = "Latitude") +
   theme(axis.text.x = element_text(size = 10),
         panel.spacing = unit(0.6, "lines"),
         plot.title = element_text(size = 12, face = "bold"),
-        plot.subtitle = element_text(size = 11),
+        plot.subtitle = element_text(size = 11, face = "bold"),
         axis.text.y = element_text(size = 10),
         legend.title = element_text(size = 8),
         legend.text = element_text(size = 8),
@@ -118,11 +118,7 @@ usa_plot <-
         nudge_x = ifelse(usa_cities_to_label$longitude > mean(continental_usa_map$long), 1, -1),
         nudge_y = ifelse(usa_cities_to_label$latitude > mean(continental_usa_map$lat), 1, -1),
         direction = "both", label.size = NA, show.legend = FALSE) +
-  scale_fill_viridis_d(direction = 1)
-  #scale_fill_manual(values = c("#FAEBD7", "#CDC0B0", "azure3", "#EEC591", 
-        #"#8B7356", "#CDC8B1", "#CDC1C5", "#8B8386", "#CDC9A5", "#CDAF95", 
-        #"#EED8AE", "#CDC5BF", "#FFF5EE", "#CDB5CD", "#FFDAB9", "#CD8500",
-        #"#6B8E23", "#CD8162", "#68838B")) 
+        scale_fill_brewer(palette = "Accent")
 
 ##################
 ## CHINA PLOT  ###
@@ -145,11 +141,11 @@ china_plot <-
   geom_point(data = df3, aes(x = longitude, y = latitude, size = total_city, 
                              show.legend = FALSE), alpha = 0.7) +
   scale_size(range = c(3, 10), name = "Number of Publications") +
-  labs(title = " ", subtitle = "China", x = "Longitude", y = "Latitude") +
+  labs(title = " ", subtitle = "(c) China", x = "Longitude", y = "Latitude") +
   theme(axis.text.x = element_text(size = 10),
     panel.spacing = unit(0.6, "lines"),
     plot.title = element_text(size = 12, face = "bold"),
-    plot.subtitle = element_text(size = 11),
+    plot.subtitle = element_text(size = 11, face = "bold"),
     axis.text.y = element_text(size = 10),
     legend.title = element_text(size = 8),
     legend.text = element_text(size = 8),
@@ -167,7 +163,7 @@ china_plot <-
        nudge_x = ifelse(cities_to_label$longitude > mean(china_map$long), 1, -1),
        nudge_y = ifelse(cities_to_label$latitude > mean(china_map$lat), 1, -1),
        direction = "both", label.size = NA, show.legend = FALSE) +
-  scale_fill_viridis_d(direction = 1) +
+  scale_fill_brewer(palette = "Accent") +
   ggspatial::annotation_north_arrow(
     location = "tr", which_north = "true",
     pad_x = unit(0.1, "in"), pad_y = unit(0.1, "in"),
