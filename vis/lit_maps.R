@@ -42,12 +42,14 @@ labels <- c('0', '1', '2', '3', '6', '7-9', '10-20', '21-24', '25-30', 'Over 30'
 
 world_data$total_count <- cut(world_data$total_count, breaks = breaks,
     labels = labels, include.lowest = TRUE, right = FALSE)
+world_data <- subset(world_data, region != "Antarctica")
 
 map_plot <-
   ggplot(world_data, aes(x = long, y = lat, group = group, fill = total_count)) +
   geom_polygon(color = "gray80", linewidth = 0.0001) +  
   expand_limits(x = world_data$long, y = world_data$lat) +
   scale_fill_viridis_d(direction = 1) +
+  coord_cartesian(xlim = c(-155, 180), ylim = c(-60, 85)) +
   labs(colour = NULL, 
        title = "(a) Quantity of First-Author Broadband Sustainability Papers.",
        subtitle = "Spatial distribution of papers by country.",
@@ -93,7 +95,8 @@ usa_plot <-
                fill = "gray", colour = "white") +
   geom_point(data = df2, aes(x = longitude, y = latitude, size = total_city, 
             show.legend = FALSE), alpha = 0.7) +
-  scale_size(range = c(3, 10), name = "Number of Publications") + 
+  scale_size(range = c(3, 10), name = "Number of Publications",
+             breaks = seq(0, max(df3$total_city), by = 1)) + 
   labs(title = "Number of authors per city in countries with over 20 authors.",
        subtitle = "(b) USA",
        x = "Longitude", y = "Latitude") +
@@ -111,14 +114,14 @@ usa_plot <-
         axis.title.x = element_blank(),
         axis.title.y = element_blank()) +
   geom_label_repel(data = usa_cities_to_label, aes(x = longitude, y = latitude,
-        label = author_city, fill = author_city), color = "black",
+        label = author_city, fill = author_city), color = "white",
         fontface = "bold", size = 3.5, box.padding = 1.0, point.padding = 0.3,
         min.segment.length = 0, max.overlaps = Inf, force = 25, max.time = 2,
         segment.color = "black", segment.size = 0.3,
         nudge_x = ifelse(usa_cities_to_label$longitude > mean(continental_usa_map$long), 1, -1),
         nudge_y = ifelse(usa_cities_to_label$latitude > mean(continental_usa_map$lat), 1, -1),
         direction = "both", label.size = NA, show.legend = FALSE) +
-        scale_fill_brewer(palette = "Accent")
+  scale_fill_viridis_d(option = "D", direction = 1)
 
 ##################
 ## CHINA PLOT  ###
@@ -140,7 +143,8 @@ china_plot <-
                fill = "grey", colour = "white") +
   geom_point(data = df3, aes(x = longitude, y = latitude, size = total_city, 
                              show.legend = FALSE), alpha = 0.7) +
-  scale_size(range = c(3, 10), name = "Number of Publications") +
+  scale_size(range = c(3, 10), name = "Number of Publications", 
+             breaks = seq(0, max(df3$total_city), by = 1)) +
   labs(title = " ", subtitle = "(c) China", x = "Longitude", y = "Latitude") +
   theme(axis.text.x = element_text(size = 10),
     panel.spacing = unit(0.6, "lines"),
@@ -156,14 +160,14 @@ china_plot <-
     axis.title.x = element_blank(),
     axis.title.y = element_blank()) +
   geom_label_repel(data = cities_to_label, aes(x = longitude, y = latitude,
-       label = author_city, fill = author_city), color = "black",
+       label = author_city, fill = author_city), color = "white",
        fontface = "bold", size = 3.5, box.padding = 1.0, point.padding = 0.3,
        min.segment.length = 0, max.overlaps = Inf, force = 25, max.time = 2,
        segment.color = "black", segment.size = 0.3,
        nudge_x = ifelse(cities_to_label$longitude > mean(china_map$long), 1, -1),
        nudge_y = ifelse(cities_to_label$latitude > mean(china_map$lat), 1, -1),
        direction = "both", label.size = NA, show.legend = FALSE) +
-  scale_fill_brewer(palette = "Accent") +
+  scale_fill_viridis_d(option = "D", direction = 1) +
   ggspatial::annotation_north_arrow(
     location = "tr", which_north = "true",
     pad_x = unit(0.1, "in"), pad_y = unit(0.1, "in"),
@@ -181,22 +185,46 @@ combined <- ggarrange(map_plot, top_3, nrow = 2,
           common.legend = FALSE, legend='bottom', heights = c(7, 5)) 
 
 path = file.path(folder, 'figures', 'article_maps.png')
-png(path, units="in", width=11, height=12, res=300)
+png(path, units="in", width=12, height=12, res=300)
 print(combined)
 dev.off()
 
 ######################
 ## Country Sankey  ###
 ######################
+data <- read.csv(file.path(folder, "..", "results", filename), stringsAsFactors = FALSE)
 df <- data %>%
   rename_with(~ str_replace_all(., "_", " ") %>% str_to_title(), 
-              .cols = c("country", "income", "spatial_focus"))
+              .cols = c("country", "income", "SDG"))
+
+df <- data %>%
+  rename_with(~ str_replace_all(., "_", " ") %>% str_to_title(), 
+              .cols = c("country", "income", "SDG")) %>%
+  group_by(Country) %>%
+  mutate(TotalNumber = sum(number, na.rm = TRUE)) %>%
+  ungroup() %>%
+  mutate(Country = if_else(Country %in% 
+                             (df %>% group_by(Country) %>% 
+                                summarise(TotalNumber = sum(number, na.rm = TRUE)) %>% 
+                                arrange(desc(TotalNumber)) %>% 
+                                slice_head(n = 10) %>% 
+                                pull(Country)),
+                           Country,
+                           "Rest of the World"))
+df <- df %>%
+  mutate(Country = factor(Country, levels = c(
+    "China", "USA", "United Kingdom", "India", "Spain", 
+    "Italy", "Germany", "Canada", "Pakistan", "Belgium", 
+    "Rest of the World"
+  )))
+  
 df <- df %>%
   arrange(desc(Country))
 
 df_long <- df %>%
-  make_long(`Country`, `Income`, `Spatial Focus`) %>%  
-  mutate(x = str_to_title(x)) 
+  make_long(`Country`, `Income`, `Sdg`) %>%
+  mutate(x = str_to_title(x),
+         x = str_replace_all(x, "\\bSdg\\b", "SDG"))
   
 sankey_plot <- ggplot(df_long, aes(x = x, next_x = next_x, node = node,
                       next_node = next_node, fill = factor(node),
