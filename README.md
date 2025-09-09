@@ -23,7 +23,7 @@ Specifically, the research questions are:
 
 #### Figure 1 .
 <p align="center">
-  <img src="/docs/flowchart.png" />
+  <img src="/docs/method_box.png" />
 </p>
 
 ## Literature Review Results
@@ -33,7 +33,7 @@ number of research on relationship between broadband and SDGs was recorded.
 
 #### Figure 2 .
 <p align="center">
-  <img src="/docs/author_maps.png" />
+  <img src="/docs/article_maps.png" />
 </p>
 
 ## Team
